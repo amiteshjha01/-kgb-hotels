@@ -6,7 +6,7 @@ export default function BeachViewHotel() {
         <div className="bg-background">
 
             <section className="relative h-[75vh] md:h-[85vh] overflow-hidden">
-                <Image src="/hotels/beach-view.jpg" alt="Beach View Hotel - Luxury Coastal Retreat in Visakhapatnam" fill sizes="100vw" className="object-cover" />
+                <Image src="/hotels/beach-view.jpg" alt="Beach View Hotel - Luxury Coastal Retreat in Visakhapatnam" fill sizes="100vw" loading="eager" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
 
                 <div className="relative z-10 h-full flex items-end">
