@@ -10,6 +10,7 @@ export default function Hero() {
                 alt="KGB Hotels Visakhapatnam - Premium Luxury Stays"
                 fill
                 priority
+                sizes="100vw"
                 className="object-cover"
             />
 

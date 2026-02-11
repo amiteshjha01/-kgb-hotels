@@ -11,6 +11,7 @@ export default function CoolRiverHotel() {
                     src="/hotels/cool-river.png"
                     alt="Cool River Hotel - Premium Corporate Stay in Visakhapatnam"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
