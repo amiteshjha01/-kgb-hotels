@@ -21,7 +21,8 @@ export default function BeachViewHotel() {
 
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-4">
-                    <HotelTabs />
+                    <HotelTabs hotelSlug="beach-view" />
+
                 </div>
             </section>
 

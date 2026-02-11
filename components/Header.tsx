@@ -72,13 +72,13 @@ export default function Header() {
                 {/* CTA Buttons (Desktop) */}
                 <div className="hidden md:flex gap-3">
                     <a
-                        href="https://wa.me/91XXXXXXXXXX"
+                        href="https://wa.me/919676247755"
                         className="px-4 py-2 rounded-md bg-yellow-500 text-black font-semibold hover:bg-yellow-400"
                     >
                         WhatsApp
                     </a>
                     <a
-                        href="tel:+91XXXXXXXXXX"
+                        href="tel:+919676247755"
                         className="px-4 py-2 rounded-md border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black"
                     >
                         Call
@@ -138,13 +138,13 @@ export default function Header() {
                     {/* CTA Buttons (Mobile) */}
                     <div className="flex gap-3 pt-3">
                         <a
-                            href="https://wa.me/91XXXXXXXXXX"
+                            href="https://wa.me/919676247755"
                             className="flex-1 text-center py-2 bg-yellow-500 text-black rounded-md font-semibold"
                         >
                             WhatsApp
                         </a>
                         <a
-                            href="tel:+91XXXXXXXXXX"
+                            href="tel:+919676247755"
                             className="flex-1 text-center py-2 border border-yellow-500 text-yellow-500 rounded-md"
                         >
                             Call

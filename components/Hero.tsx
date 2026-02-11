@@ -35,14 +35,14 @@ export default function Hero() {
                     {/* CTA Buttons */}
                     <div className="mt-8 flex flex-wrap gap-4">
                         <a
-                            href="https://wa.me/91XXXXXXXXXX"
+                            href="https://wa.me/919676247755"
                             className="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-400 transition"
                         >
                             Book on WhatsApp
                         </a>
 
                         <a
-                            href="tel:+91XXXXXXXXXX"
+                            href="tel:+919676247755"
                             className="px-6 py-3 border border-yellow-500 text-yellow-400 font-semibold rounded-md hover:bg-yellow-500 hover:text-black transition"
                         >
                             Call Now
