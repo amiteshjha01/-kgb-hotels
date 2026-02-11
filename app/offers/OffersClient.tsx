@@ -21,28 +21,28 @@ export default function OffersClient() {
             )
 
     return (
-        <div className="bg-black min-h-screen pt-24 pb-20">
+        <div className="bg-background min-h-screen pt-24 pb-20">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Heading */}
-                <header className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                        Special <span className="text-yellow-400">Offers & Packages</span>
+                <header className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Exclusive Offers & Packages
                     </h1>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                        Discover exclusive deals across our premium hotels in Visakhapatnam.
+                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                        Discover special rates and curated packages across our premium hotels in Visakhapatnam.
                     </p>
                 </header>
 
                 {/* Filter */}
-                <nav className="flex flex-wrap justify-center gap-3 mb-14">
+                <nav className="flex flex-wrap justify-center gap-3 mb-16">
                     {hotels.map((hotel) => (
                         <button
                             key={hotel.value}
                             onClick={() => setActiveHotel(hotel.value)}
-                            className={`px-5 py-2 rounded-full text-sm font-semibold border ${activeHotel === hotel.value
-                                    ? "bg-yellow-500 text-black border-yellow-500"
-                                    : "border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black"
+                            className={`px-6 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all ${activeHotel === hotel.value
+                                    ? "bg-accent text-white border-accent shadow-lg"
+                                    : "border-border-color text-foreground hover:border-accent hover:text-accent"
                                 }`}
                         >
                             {hotel.label}
@@ -60,42 +60,42 @@ export default function OffersClient() {
                         return (
                             <article
                                 key={offer.id}
-                                className="border border-yellow-500/20 rounded-xl p-8 bg-black"
+                                className="border border-border-color rounded-lg p-8 bg-white hover:shadow-xl transition-shadow"
                             >
-                                <div className="flex justify-between mb-4">
-                                    <span className="text-xs font-semibold bg-yellow-500 text-black px-3 py-1 rounded-full">
+                                <div className="flex justify-between items-start mb-4 gap-4">
+                                    <span className="text-xs font-semibold bg-accent text-white px-4 py-2 rounded-full">
                                         {offer.tag}
                                     </span>
 
                                     <span
-                                        className={`text-xs px-3 py-1 rounded-full ${isExpired
-                                                ? "bg-gray-600 text-white"
-                                                : "bg-emerald-500 text-black"
+                                        className={`text-xs px-3 py-1 rounded-full font-semibold whitespace-nowrap ${isExpired
+                                                ? "bg-gray-200 text-gray-600"
+                                                : "bg-green-100 text-green-700"
                                             }`}
                                     >
                                         {isExpired ? "Expired" : `Valid Till ${offer.expiry}`}
                                     </span>
                                 </div>
 
-                                <h2 className="text-2xl font-semibold mb-3">
+                                <h2 className="text-2xl font-bold text-primary mb-3">
                                     {offer.title}
                                 </h2>
 
-                                <p className="text-gray-300 text-sm mb-6">
+                                <p className="text-text-light text-sm mb-6">
                                     {offer.description}
                                 </p>
 
                                 {!isExpired && (
                                     <div className="flex gap-4">
                                         <a
-                                            href="https://wa.me/91XXXXXXXXXX"
-                                            className="px-5 py-2 bg-yellow-500 text-black font-semibold rounded-md"
+                                            href="https://wa.me/919676247755"
+                                            className="px-6 py-2 bg-accent text-white font-semibold rounded-lg hover:bg-accent-light transition"
                                         >
                                             Enquire
                                         </a>
                                         <a
-                                            href="tel:+91XXXXXXXXXX"
-                                            className="px-5 py-2 border border-yellow-500 text-yellow-400 rounded-md"
+                                            href="tel:+919676247755"
+                                            className="px-6 py-2 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition"
                                         >
                                             Call
                                         </a>

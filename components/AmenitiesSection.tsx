@@ -2,55 +2,54 @@ import AmenityItem from "./AmenityItem"
 
 export default function AmenitiesSection() {
     return (
-        <section className="py-20 bg-black border-t border-yellow-500/10">
+        <section className="py-24 bg-gradient-to-b from-white to-gray-50 border-t border-border-color">
             <div className="max-w-7xl mx-auto px-4">
 
-                <div className="text-center mb-14">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        Amenities at <span className="text-yellow-400">KGB Hotels</span>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        World-Class Amenities
                     </h2>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                        Thoughtfully curated amenities to ensure comfort, convenience,
-                        and a seamless stay experience.
+                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                        Every detail is thoughtfully curated to ensure your comfort, convenience, and unforgettable stay.
                     </p>
                 </div>
 
-                <div className="grid gap-10 md:grid-cols-3">
+                <div className="grid gap-8 md:grid-cols-3">
 
                     <AmenityItem
                         icon="📶"
                         title="High-Speed Wi-Fi"
-                        description="Reliable internet connectivity for work, entertainment, and seamless communication."
+                        description="Reliable gigabit internet connectivity for seamless work, streaming, and communication."
                     />
 
                     <AmenityItem
                         icon="🚗"
-                        title="Parking Facility"
-                        description="Safe and convenient parking space for guests traveling by car."
+                        title="Secure Parking"
+                        description="Safe, monitored parking facilities available for all guests."
                     />
 
                     <AmenityItem
                         icon="🛎️"
-                        title="24×7 Front Desk"
-                        description="Round-the-clock assistance to ensure a smooth and hassle-free stay."
+                        title="24/7 Concierge"
+                        description="Round-the-clock dedicated support for all your needs and inquiries."
                     />
 
                     <AmenityItem
                         icon="🧹"
-                        title="Daily Housekeeping"
-                        description="Clean, hygienic rooms maintained with professional housekeeping services."
+                        title="Premium Housekeeping"
+                        description="Daily professional cleaning with premium standards and attention to detail."
                     />
 
                     <AmenityItem
                         icon="⚡"
                         title="Power Backup"
-                        description="Uninterrupted power supply to ensure comfort at all times."
+                        description="Uninterrupted electricity supply with backup generators for your peace of mind."
                     />
 
                     <AmenityItem
                         icon="📍"
                         title="Prime Locations"
-                        description="All hotels are strategically located with easy access to key areas of the city."
+                        description="Strategically positioned for easy access to city attractions and business hubs."
                     />
 
                 </div>

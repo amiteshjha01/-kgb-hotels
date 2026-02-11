@@ -140,11 +140,11 @@ export default function ContactPage() {
     }
 
     return (
-        <div className="bg-gradient-to-br from-slate-950 via-black to-slate-900 py-16 sm:py-20 lg:py-24 min-h-screen">
+        <div className="bg-background py-16 sm:py-20 lg:py-24 min-h-screen">
             {/* Background Decorations */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -156,14 +156,14 @@ export default function ContactPage() {
                     className="text-center mb-12 md:mb-16"
                 >
                     <div className="inline-block mb-4">
-                        <span className="text-yellow-400 text-sm md:text-base font-semibold tracking-wider uppercase bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
+                        <span className="text-accent text-sm md:text-base font-semibold tracking-wider uppercase bg-accent/10 px-4 py-2 rounded-full border border-accent/30">
                             We're Here to Help
                         </span>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                        Get in <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Touch</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4">
+                        Get in <span className="text-accent">Touch</span>
                     </h1>
-                    <p className="mt-4 text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+                    <p className="mt-4 text-text-light text-base md:text-lg max-w-2xl mx-auto">
                         Contact us for bookings, corporate stays, family trips, or custom hotel packages.
                         We're available 24/7 to assist you.
                     </p>

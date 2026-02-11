@@ -6,18 +6,18 @@ type Props = {
 
 export default function Breadcrumbs({ items }: Props) {
     return (
-        <nav className="text-sm text-gray-400 mb-6">
+        <nav className="text-sm text-text-light mb-8">
             <ul className="flex flex-wrap gap-2">
                 {items.map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                         {item.href ? (
-                            <Link href={item.href} className="hover:text-yellow-400">
+                            <Link href={item.href} className="text-primary hover:text-accent transition">
                                 {item.label}
                             </Link>
                         ) : (
-                            <span className="text-yellow-400">{item.label}</span>
+                            <span className="text-accent font-semibold">{item.label}</span>
                         )}
-                        {index < items.length - 1 && <span>›</span>}
+                        {index < items.length - 1 && <span className="text-text-light">›</span>}
                     </li>
                 ))}
             </ul>

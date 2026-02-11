@@ -17,32 +17,42 @@ export default function HotelCard({
     tag,
 }: HotelCardProps) {
     return (
-        <div className="bg-black border border-yellow-500/20 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-yellow-500/10 transition">
-            <div className="relative h-56">
-                <Image
-                    src={image}
-                    alt={title}
-                    fill
-                    className="object-cover"
-                />
-                <span className="absolute top-3 left-3 bg-yellow-500 text-black text-xs font-semibold px-3 py-1 rounded-full">
-                    {tag}
-                </span>
-            </div>
+        <Link href={link}>
+            <div className="group bg-card-bg border border-border-color rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                
+                {/* Image Container */}
+                <div className="relative h-64 overflow-hidden bg-gray-200">
+                    <Image
+                        src={image}
+                        alt={title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    
+                    {/* Tag Badge */}
+                    <span className="absolute top-4 left-4 bg-accent text-white text-xs font-semibold px-4 py-2 rounded-full shadow-lg">
+                        {tag}
+                    </span>
 
-            <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{title}</h3>
-                <p className="text-gray-300 text-sm mb-4">
-                    {description}
-                </p>
+                    {/* Overlay on Hover */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
 
-                <Link
-                    href={link}
-                    className="inline-block text-yellow-400 font-semibold hover:underline"
-                >
-                    View Hotel →
-                </Link>
+                {/* Content */}
+                <div className="p-6">
+                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition">
+                        {title}
+                    </h3>
+                    <p className="text-text-light text-sm mb-6 leading-relaxed">
+                        {description}
+                    </p>
+
+                    <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all">
+                        <span>Explore</span>
+                        <span className="text-lg">→</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }

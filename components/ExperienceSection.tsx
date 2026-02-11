@@ -2,37 +2,36 @@ import ExperienceCard from "./ExperienceCard"
 
 export default function ExperienceSection() {
     return (
-        <section className="py-20 bg-black border-t border-yellow-500/10">
+        <section className="py-24 bg-white border-t border-border-color">
             <div className="max-w-7xl mx-auto px-4">
 
-                <div className="text-center mb-14">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        Crafted Experiences at <span className="text-yellow-400">KGB Hotels</span>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Curated Experiences
                     </h2>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                        Whether you are traveling for business, with family, or for a relaxing
-                        getaway, our hotels are designed to match your journey.
+                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                        Whether you're traveling for business, with family, or seeking a peaceful retreat, our hotels are designed to exceed expectations.
                     </p>
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-3">
 
                     <ExperienceCard
-                        tag="Corporate Comfort"
-                        title="Designed for Business Travelers"
-                        description="Quiet rooms, high-speed Wi-Fi, work-friendly spaces, and seamless service — ensuring productivity and comfort throughout your stay."
+                        tag="Corporate Excellence"
+                        title="Premium Business Stays"
+                        description="Sophisticated rooms, high-speed connectivity, dedicated work spaces, and attentive service to keep you productive and comfortable."
                     />
 
                     <ExperienceCard
-                        tag="Family Friendly"
-                        title="Comfort for Families & Groups"
-                        description="Spacious rooms, flexible amenities, and thoughtful services that make family stays relaxed, safe, and enjoyable."
+                        tag="Family Comfort"
+                        title="Spaces for Every Family"
+                        description="Thoughtfully designed rooms, comprehensive amenities, and warm hospitality that makes family vacations memorable and stress-free."
                     />
 
                     <ExperienceCard
-                        tag="Leisure & Tourism"
-                        title="Relaxing Stays by the Beach"
-                        description="Scenic locations, calm surroundings, and exclusive rooms designed for couples, tourists, and weekend escapes."
+                        tag="Leisure Escape"
+                        title="Coastal Serenity"
+                        description="Scenic beauty, tranquil ambiance, and exclusive accommodations perfect for couples, travelers, and weekend retreats."
                     />
 
                 </div>

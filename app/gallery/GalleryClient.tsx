@@ -60,11 +60,11 @@ export default function GalleryClient() {
     }
 
     return (
-        <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen pt-20 md:pt-24 pb-20">
+        <div className="bg-background min-h-screen pt-20 md:pt-24 pb-20">
             {/* Animated Background Elements */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-0 left-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+                <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse delay-1000" />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -76,15 +76,15 @@ export default function GalleryClient() {
                     className="text-center mb-12 md:mb-16"
                 >
                     <div className="inline-block mb-4">
-                        <span className="text-yellow-400 text-sm md:text-base font-semibold tracking-wider uppercase bg-yellow-400/10 px-4 py-2 rounded-full border border-yellow-400/20">
-                            Explore Our Properties
+                        <span className="text-accent text-sm md:text-base font-semibold tracking-wider uppercase bg-accent/10 px-4 py-2 rounded-full border border-accent/30">
+                            Visual Showcase
                         </span>
                     </div>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-yellow-100 to-yellow-400">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-primary">
                         Hotel Gallery
                     </h1>
-                    <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed px-4">
-                        Immerse yourself in the luxury and elegance of KGB Hotels across Visakhapatnam
+                    <p className="text-base md:text-lg text-text-light max-w-2xl mx-auto leading-relaxed px-4">
+                        Explore the stunning interiors and beautiful spaces across our premium hotels in Visakhapatnam
                     </p>
                 </motion.header>
 
@@ -105,21 +105,14 @@ export default function GalleryClient() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`group relative px-5 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-300 ${activeHotel === filter.value
-                                    ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black shadow-lg shadow-yellow-500/50"
-                                    : "bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 border border-yellow-500/20 hover:border-yellow-500/40"
+                                    ? "bg-accent text-white shadow-lg shadow-accent/50"
+                                    : "bg-white/10 text-foreground hover:bg-white/20 border border-accent/20 hover:border-accent/40"
                                 }`}
                         >
                             <span className="flex items-center gap-2">
                                 <span className="text-lg">{filter.icon}</span>
                                 <span>{filter.label}</span>
                             </span>
-                            {activeHotel === filter.value && (
-                                <motion.div
-                                    layoutId="activeFilter"
-                                    className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full -z-10"
-                                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                                />
-                            )}
                         </motion.button>
                     ))}
                 </motion.div>
@@ -131,8 +124,8 @@ export default function GalleryClient() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="text-center mb-8"
                 >
-                    <p className="text-gray-400 text-sm md:text-base">
-                        Showing <span className="text-yellow-400 font-semibold">{filteredImages.length}</span> {filteredImages.length === 1 ? 'photo' : 'photos'}
+                    <p className="text-text-light text-sm md:text-base">
+                        Showing <span className="text-accent font-semibold">{filteredImages.length}</span> {filteredImages.length === 1 ? 'photo' : 'photos'}
                     </p>
                 </motion.div>
 

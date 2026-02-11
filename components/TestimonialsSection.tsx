@@ -2,15 +2,15 @@ import TestimonialCard from "./TestimonialCard"
 
 export default function TestimonialsSection() {
     return (
-        <section className="py-20 bg-black border-t border-yellow-500/10">
+        <section className="py-24 bg-background border-t border-border-color">
             <div className="max-w-7xl mx-auto px-4">
 
-                <div className="text-center mb-14">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        What Our Guests Say About <span className="text-yellow-400">KGB Hotels</span>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Guest Stories
                     </h2>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                        Trusted by business travelers, families, and leisure guests across Visakhapatnam.
+                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                        Trusted by corporate travelers, families, and leisure guests across India and beyond.
                     </p>
                 </div>
 
@@ -18,20 +18,20 @@ export default function TestimonialsSection() {
 
                     <TestimonialCard
                         name="Rajesh Kumar"
-                        role="Corporate Traveler"
-                        review="Excellent stay experience. Clean rooms, professional staff, and perfect location for business travel."
+                        role="Business Executive"
+                        review="Exceptional experience! The rooms are immaculate, staff is highly professional, and the location is perfect for my business needs."
                     />
 
                     <TestimonialCard
                         name="Anita Sharma"
-                        role="Family Guest"
-                        review="Very comfortable stay with my family. Spacious rooms and great service made our trip enjoyable."
+                        role="Family Traveler"
+                        review="Our family loved every moment. The spacious rooms, friendly service, and excellent amenities made our vacation truly special."
                     />
 
                     <TestimonialCard
                         name="Sandeep Verma"
-                        role="Leisure Traveler"
-                        review="Loved the calm atmosphere and hospitality. Perfect place to relax after exploring the city."
+                        role="Leisure Guest"
+                        review="A perfect escape! The tranquil atmosphere, beachfront beauty, and warm hospitality made this an unforgettable getaway."
                     />
 
                 </div>

@@ -2,16 +2,15 @@ import HotelCard from "./HotelCard"
 
 export default function HotelsSection() {
     return (
-        <section className="py-20 bg-black">
+        <section className="py-24 bg-background">
             <div className="max-w-7xl mx-auto px-4">
 
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        Our Hotels in <span className="text-yellow-400">Visakhapatnam</span>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Our Premium Collection
                     </h2>
-                    <p className="mt-3 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                        Three thoughtfully designed hotels, each tailored to suit different
-                        travel needs — from business stays to relaxing beach getaways.
+                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                        Three thoughtfully designed hotels, each with its own unique character and purpose—crafted to exceed your expectations.
                     </p>
                 </div>
 
@@ -22,7 +21,7 @@ export default function HotelsSection() {
                         tag="Corporate Premium"
                         image="/hotels/cool-river.png"
                         link="/hotel/cool-river"
-                        description="A premium corporate hotel offering privacy, comfort, and efficiency — ideal for business travelers and long stays."
+                        description="A sophisticated corporate sanctuary offering privacy, comfort, and efficiency—ideal for business travelers and extended stays."
                     />
 
                     <HotelCard
@@ -30,7 +29,7 @@ export default function HotelsSection() {
                         tag="Family & Leisure"
                         image="/hotels/all-rounder.jpg"
                         link="/hotel/all-rounder"
-                        description="Designed for families, groups, and mixed travelers, offering spacious rooms and versatile amenities."
+                        description="Versatile luxury designed for families and groups, with spacious rooms and comprehensive amenities for every guest."
                     />
 
                     <HotelCard
@@ -38,7 +37,7 @@ export default function HotelsSection() {
                         tag="Tourism Focus"
                         image="/hotels/beach-view.jpg"
                         link="/hotel/beach-view"
-                        description="A scenic beachfront property perfect for couples, tourists, and weekend escapes with limited exclusive rooms."
+                        description="An exclusive beachfront retreat perfect for couples, tourists, and memorable escapes with limited luxurious rooms."
                     />
 
                 </div>

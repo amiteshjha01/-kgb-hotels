@@ -6,13 +6,13 @@ type Props = {
 
 export default function ExperienceCard({ title, description, tag }: Props) {
     return (
-        <div className="border border-yellow-500/20 rounded-xl p-6 bg-black hover:shadow-lg hover:shadow-yellow-500/10 transition">
-            <span className="inline-block mb-3 text-xs font-semibold text-black bg-yellow-500 px-3 py-1 rounded-full">
+        <div className="border-2 border-accent/30 rounded-lg p-8 bg-white hover:border-accent hover:shadow-xl transition-all duration-300">
+            <span className="inline-block mb-4 text-xs font-semibold text-white bg-accent px-4 py-2 rounded-full">
                 {tag}
             </span>
 
-            <h3 className="text-xl font-bold mb-2">{title}</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <h3 className="text-2xl font-bold text-primary mb-3">{title}</h3>
+            <p className="text-text-light leading-relaxed">
                 {description}
             </p>
         </div>

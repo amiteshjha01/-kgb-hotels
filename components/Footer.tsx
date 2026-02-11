@@ -1,59 +1,67 @@
 import Link from "next/link"
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear()
+
     return (
-        <footer className="bg-black border-t border-yellow-500/20 text-gray-300">
-            <div className="max-w-7xl mx-auto px-4 py-16 grid gap-10 md:grid-cols-4">
+        <footer className="bg-primary text-white">
+            <div className="max-w-7xl mx-auto px-4 py-20 grid gap-12 md:grid-cols-4">
 
-                {/* Brand */}
+                {/* Brand & About */}
                 <div>
-                    <h3 className="text-xl font-bold text-white mb-4">
-                        KGB <span className="text-yellow-400">Hotels</span>
+                    <h3 className="text-2xl font-bold mb-4">
+                        KGB <span className="text-accent">Hotels</span>
                     </h3>
-                    <p className="text-sm leading-relaxed">
-                        Premium hotels in Visakhapatnam offering comfort, convenience,
-                        and exceptional hospitality for corporate, family, and leisure travelers.
+                    <p className="text-white/80 text-sm leading-relaxed">
+                        Premium hospitality redefined. Three thoughtfully designed hotels in Visakhapatnam offering exceptional experiences for corporate, family, and leisure travelers.
                     </p>
+                    <div className="flex gap-3 mt-6">
+                        <a href="https://facebook.com" className="text-accent hover:text-accent-light transition">f</a>
+                        <a href="https://twitter.com" className="text-accent hover:text-accent-light transition">𝕏</a>
+                        <a href="https://instagram.com" className="text-accent hover:text-accent-light transition">📷</a>
+                    </div>
                 </div>
 
-                {/* Quick Links */}
+                {/* Navigation */}
                 <div>
-                    <h4 className="font-semibold text-white mb-4">Quick Links</h4>
-                    <ul className="space-y-2 text-sm">
-                        <li><Link href="/" className="hover:text-yellow-400">Home</Link></li>
-                        <li><Link href="/gallery" className="hover:text-yellow-400">Gallery</Link></li>
-                        <li><Link href="/offers" className="hover:text-yellow-400">Offers</Link></li>
-                        <li><Link href="/contact" className="hover:text-yellow-400">Contact</Link></li>
+                    <h4 className="font-bold text-white mb-6">Navigation</h4>
+                    <ul className="space-y-3 text-sm">
+                        <li><Link href="/" className="text-white/70 hover:text-accent transition">Home</Link></li>
+                        <li><Link href="/gallery" className="text-white/70 hover:text-accent transition">Gallery</Link></li>
+                        <li><Link href="/offers" className="text-white/70 hover:text-accent transition">Special Offers</Link></li>
+                        <li><Link href="/contact" className="text-white/70 hover:text-accent transition">Contact Us</Link></li>
                     </ul>
                 </div>
 
-                {/* Hotels */}
+                {/* Our Hotels */}
                 <div>
-                    <h4 className="font-semibold text-white mb-4">Our Hotels</h4>
-                    <ul className="space-y-2 text-sm">
-                        <li><Link href="/hotel/cool-river" className="hover:text-yellow-400">Cool River Hotel</Link></li>
-                        <li><Link href="/hotel/all-rounder" className="hover:text-yellow-400">All-Rounder Hotel</Link></li>
-                        <li><Link href="/hotel/beach-view" className="hover:text-yellow-400">Beach View Hotel</Link></li>
+                    <h4 className="font-bold text-white mb-6">Our Hotels</h4>
+                    <ul className="space-y-3 text-sm">
+                        <li><Link href="/hotel/cool-river" className="text-white/70 hover:text-accent transition">Cool River Hotel</Link></li>
+                        <li><Link href="/hotel/all-rounder" className="text-white/70 hover:text-accent transition">All-Rounder Hotel</Link></li>
+                        <li><Link href="/hotel/beach-view" className="text-white/70 hover:text-accent transition">Beach View Hotel</Link></li>
                     </ul>
                 </div>
 
-                {/* Contact */}
+                {/* Contact & Booking */}
                 <div>
-                    <h4 className="font-semibold text-white mb-4">Contact</h4>
-                    <p className="text-sm mb-2">📍 Visakhapatnam, Andhra Pradesh</p>
-                    <p className="text-sm mb-2">📞 +91 XXXXXXXXXX</p>
-                    <p className="text-sm mb-4">✉️ reservations@kgbhotels.com</p>
+                    <h4 className="font-bold text-white mb-6">Get In Touch</h4>
+                    <div className="space-y-3 text-sm mb-6">
+                        <p className="text-white/80">📍 Visakhapatnam, Andhra Pradesh</p>
+                        <p className="text-white/80">📞 +91 9676 247755</p>
+                        <p className="text-white/80">✉️ reservations@kgbhotels.com</p>
+                    </div>
 
                     <div className="flex gap-3">
                         <a
-                            href="https://wa.me/91XXXXXXXXXX"
-                            className="px-4 py-2 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-400"
+                            href="https://wa.me/919676247755"
+                            className="px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent-light transition text-sm"
                         >
                             WhatsApp
                         </a>
                         <a
-                            href="tel:+91XXXXXXXXXX"
-                            className="px-4 py-2 border border-yellow-500 text-yellow-400 rounded-md hover:bg-yellow-500 hover:text-black"
+                            href="tel:+919676247755"
+                            className="px-4 py-2 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-primary transition text-sm font-semibold"
                         >
                             Call
                         </a>
@@ -63,8 +71,8 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-yellow-500/10 py-4 text-center text-xs text-gray-400">
-                © {new Date().getFullYear()} KGB Hotels. All rights reserved.
+            <div className="border-t border-white/10 py-6 text-center text-sm text-white/60">
+                <p>© {currentYear} KGB Hotels. All rights reserved. | Privacy Policy | Terms & Conditions</p>
             </div>
         </footer>
     )
