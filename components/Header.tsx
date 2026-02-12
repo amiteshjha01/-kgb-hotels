@@ -9,12 +9,19 @@ export default function Header() {
     const [hotelOpen, setHotelOpen] = useState(false)
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-[var(--border-color)] shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <header className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md border-b border-[var(--border-color)] shadow-md">
+            <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 font-bold text-2xl text-primary">
-                    <span>KGB Hotels</span>
+                <Link href="/" className="flex items-center gap-2">
+                    <Image
+                        src="/logo.jpeg"
+                        alt="KGB Hotels Logo"
+                        width={140}
+                        height={45}
+                        priority
+                        className="h-auto w-auto max-w-[140px] md:max-w-[160px]"
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}
