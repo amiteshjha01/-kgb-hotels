@@ -28,7 +28,6 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-10 text-sm font-medium text-foreground">
-
                     <Link href="/" className="hover:text-accent transition">
                         Home
                     </Link>
@@ -73,12 +72,12 @@ export default function Header() {
                 </nav>
 
                 {/* CTA Buttons (Desktop) */}
-                <div className="hidden md:flex gap-3 items-center">
+                <div className="hidden md:flex gap-3">
                     <a
                         href="https://wa.me/919676247755"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2.5 rounded-lg bg-accent text-white font-bold text-sm hover:bg-accent-light transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                        className="px-6 py-2.5 rounded-lg bg-accent text-white font-bold text-sm hover:bg-accent-light transition-all shadow-md hover:shadow-lg"
                     >
                         Enquire
                     </a>
@@ -144,9 +143,11 @@ export default function Header() {
                     <div className="flex gap-3 pt-4 border-t border-[var(--border-color)]">
                         <a
                             href="https://wa.me/919676247755"
-                            className="flex-1 text-center py-2.5 bg-accent text-primary rounded-lg font-bold hover:bg-accent-light transition"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center py-2.5 bg-accent text-white rounded-lg font-bold hover:bg-accent-light transition"
                         >
-                            Book
+                            Enquire
                         </a>
                         <a
                             href="tel:+919676247755"
