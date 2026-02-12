@@ -11,13 +11,15 @@ export default function Footer() {
                 {/* Brand & About */}
                 <div>
                     <Link href="/" className="inline-block mb-6">
-                        <Image
-                            src="/logo.jpeg"
-                            alt="KGB Hotels Logo"
-                            width={160}
-                            height={50}
-                            className="h-auto w-auto max-w-[160px] brightness-0 invert"
-                        />
+                        <div className="max-w-[160px] h-auto">
+                            <Image
+                                src="/logo.jpeg"
+                                alt="KGB Hotels Logo"
+                                width={160}
+                                height={50}
+                                className="w-full h-auto brightness-0 invert"
+                            />
+                        </div>
                     </Link>
                     <p className="text-white/80 text-sm leading-relaxed">
                         Premium hospitality redefined. Three thoughtfully designed hotels in Visakhapatnam offering exceptional experiences for corporate, family, and leisure travelers.
