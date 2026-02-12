@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafbfc;
-  --foreground: #1f2937;
-  --primary: #0f172a;
-  --primary-light: #1e293b;
-  --accent: #d4af37;
-  --accent-light: #e8c547;
-  --secondary: #0ea5e9;
-  --text-light: #4b5563;
-  --border-color: #e2e8f0;
+  --background: #f8f9fa;
+  --foreground: #1a1a1a;
+  --primary: #2c3e50;
+  --primary-light: #34495e;
+  --accent: #e67e22;
+  --accent-light: #f39c12;
+  --secondary: #27ae60;
+  --text-light: #555555;
+  --border-color: #e1e8ed;
   --card-bg: #ffffff;
 }
 

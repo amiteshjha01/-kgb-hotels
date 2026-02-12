@@ -2,19 +2,19 @@ import AmenityItem from "./AmenityItem"
 
 export default function AmenitiesSection() {
     return (
-        <section className="py-24 bg-gradient-to-b from-white to-gray-50 border-t border-border-color">
-            <div className="max-w-7xl mx-auto px-4">
+        <section className="py-12 sm:py-16 md:py-24 bg-gray-50 border-t border-border-color">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">
                         World-Class Amenities
                     </h2>
-                    <p className="text-lg text-text-light max-w-2xl mx-auto">
-                        Every detail is thoughtfully curated to ensure your comfort, convenience, and unforgettable stay.
+                    <p className="text-base sm:text-lg text-text-light max-w-2xl mx-auto px-2">
+                        Every detail is thoughtfully curated to ensure your comfort and memorable stay.
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-3">
+                <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
 
                     <AmenityItem
                         icon="📶"

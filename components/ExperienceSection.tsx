@@ -2,19 +2,19 @@ import ExperienceCard from "./ExperienceCard"
 
 export default function ExperienceSection() {
     return (
-        <section className="py-24 bg-white border-t border-border-color">
-            <div className="max-w-7xl mx-auto px-4">
+        <section className="py-12 sm:py-16 md:py-24 bg-white border-t border-border-color">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">
                         Curated Experiences
                     </h2>
-                    <p className="text-lg text-text-light max-w-2xl mx-auto">
+                    <p className="text-base sm:text-lg text-text-light max-w-2xl mx-auto px-2">
                         Whether you're traveling for business, with family, or seeking a peaceful retreat, our hotels are designed to exceed expectations.
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-3">
+                <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
 
                     <ExperienceCard
                         tag="Corporate Excellence"

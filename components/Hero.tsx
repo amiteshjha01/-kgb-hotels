@@ -38,9 +38,11 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
                         <a
                             href="https://wa.me/919676247755"
-                            className="px-6 sm:px-8 py-3 sm:py-4 bg-accent text-primary font-bold text-sm sm:text-base rounded-lg hover:bg-accent-light transition duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 sm:px-8 py-3 sm:py-4 bg-accent text-white font-bold text-sm sm:text-base rounded-lg hover:bg-accent-light transition duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
                         >
-                            Book Your Stay
+                            Enquire Now
                         </a>
 
                         <a
