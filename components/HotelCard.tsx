@@ -31,7 +31,7 @@ export default function HotelCard({
                     />
                     
                     {/* Tag Badge */}
-                    <span className="absolute top-4 left-4 bg-accent text-white text-xs font-semibold px-4 py-2 rounded-full shadow-lg">
+                    <span className="absolute top-4 left-4 bg-accent text-primary text-xs font-bold px-4 py-2.5 rounded-full shadow-lg hover:bg-accent-light transition">
                         {tag}
                     </span>
 

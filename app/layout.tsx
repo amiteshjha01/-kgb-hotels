@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-background text-foreground">
         <Header />
-        <main className="pt-20">{children}</main>
+        <main className="pt-20 pb-24 md:pb-0">{children}</main>
         <Footer />
       </body>
     </html>

@@ -38,14 +38,14 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="https://wa.me/919676247755"
-                            className="px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-light transition duration-300 transform hover:scale-105 shadow-lg"
+                            className="px-8 py-4 bg-accent text-primary font-bold rounded-lg hover:bg-accent-light transition duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
                         >
                             Book Your Stay
                         </a>
 
                         <a
                             href="tel:+919676247755"
-                            className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition duration-300"
+                            className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition duration-300 hover:shadow-xl"
                         >
                             Call: +91 9676 247755
                         </a>

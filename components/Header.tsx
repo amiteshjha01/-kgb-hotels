@@ -74,13 +74,13 @@ export default function Header() {
                 <div className="hidden md:flex gap-3">
                     <a
                         href="https://wa.me/919676247755"
-                        className="px-6 py-2 rounded-lg bg-accent text-white font-semibold hover:bg-accent-light transition"
+                        className="px-7 py-2.5 rounded-lg bg-accent text-primary font-bold hover:bg-accent-light shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
                     >
                         Book Now
                     </a>
                     <a
                         href="tel:+919676247755"
-                        className="px-6 py-2 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition"
+                        className="px-7 py-2.5 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all hover:-translate-y-0.5"
                     >
                         Call
                     </a>
@@ -140,19 +140,39 @@ export default function Header() {
                     <div className="flex gap-3 pt-4 border-t border-[var(--border-color)]">
                         <a
                             href="https://wa.me/919676247755"
-                            className="flex-1 text-center py-2 bg-accent text-white rounded-lg font-semibold"
+                            className="flex-1 text-center py-2.5 bg-accent text-primary rounded-lg font-bold hover:bg-accent-light transition"
                         >
                             Book
                         </a>
                         <a
                             href="tel:+919676247755"
-                            className="flex-1 text-center py-2 border-2 border-primary text-primary rounded-lg"
+                            className="flex-1 text-center py-2.5 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-white transition"
                         >
                             Call
                         </a>
                     </div>
                 </div>
             )}
+
+            {/* Sticky Mobile CTA Bar */}
+            <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--border-color)] shadow-2xl z-40">
+                <div className="flex gap-2 p-2">
+                    <a
+                        href="tel:+919676247755"
+                        className="flex-1 flex items-center justify-center gap-2 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary-light transition"
+                    >
+                        <span>📞</span>
+                        <span className="hidden sm:inline">Call</span>
+                    </a>
+                    <a
+                        href="https://wa.me/919676247755"
+                        className="flex-1 flex items-center justify-center gap-2 py-3 bg-accent text-primary font-bold rounded-lg hover:bg-accent-light transition"
+                    >
+                        <span>💬</span>
+                        <span className="hidden sm:inline">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
         </header>
     )
 }

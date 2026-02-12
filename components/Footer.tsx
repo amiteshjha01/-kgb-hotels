@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -9,9 +10,15 @@ export default function Footer() {
 
                 {/* Brand & About */}
                 <div>
-                    <h3 className="text-2xl font-bold mb-4">
-                        KGB <span className="text-accent">Hotels</span>
-                    </h3>
+                    <Link href="/" className="inline-block mb-6">
+                        <Image
+                            src="/logo.jpeg"
+                            alt="KGB Hotels Logo"
+                            width={160}
+                            height={50}
+                            className="h-auto w-auto max-w-[160px] brightness-0 invert"
+                        />
+                    </Link>
                     <p className="text-white/80 text-sm leading-relaxed">
                         Premium hospitality redefined. Three thoughtfully designed hotels in Visakhapatnam offering exceptional experiences for corporate, family, and leisure travelers.
                     </p>
@@ -55,13 +62,13 @@ export default function Footer() {
                     <div className="flex gap-3">
                         <a
                             href="https://wa.me/919676247755"
-                            className="px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent-light transition text-sm"
+                            className="px-5 py-2.5 bg-accent text-primary font-bold rounded-lg hover:bg-accent-light transition text-sm hover:shadow-lg hover:-translate-y-0.5"
                         >
                             WhatsApp
                         </a>
                         <a
                             href="tel:+919676247755"
-                            className="px-4 py-2 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-primary transition text-sm font-semibold"
+                            className="px-5 py-2.5 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-primary transition text-sm font-bold hover:-translate-y-0.5"
                         >
                             Call
                         </a>
