@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <footer className="bg-primary text-white">
-            <div className="max-w-7xl mx-auto px-4 py-20 grid gap-12 md:grid-cols-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 grid gap-12 md:grid-cols-4">
 
                 {/* Brand & About */}
                 <div>
@@ -24,11 +24,7 @@ export default function Footer() {
                     <p className="text-white/80 text-sm leading-relaxed">
                         Premium hospitality redefined. Three thoughtfully designed hotels in Visakhapatnam offering exceptional experiences for corporate, family, and leisure travelers.
                     </p>
-                    <div className="flex gap-3 mt-6">
-                        <a href="https://facebook.com" className="text-accent hover:text-accent-light transition">f</a>
-                        <a href="https://twitter.com" className="text-accent hover:text-accent-light transition">𝕏</a>
-                        <a href="https://instagram.com" className="text-accent hover:text-accent-light transition">📷</a>
-                    </div>
+
                 </div>
 
                 {/* Navigation */}
@@ -56,8 +52,8 @@ export default function Footer() {
                 <div>
                     <h4 className="font-bold text-white mb-6">Get In Touch</h4>
                     <div className="space-y-3 text-sm mb-6">
-                        <p className="text-white/80">📍 Visakhapatnam, Andhra Pradesh</p>
-                        <p className="text-white/80">📞 +91 9676 247755</p>
+                        <p className="text-white/80">Visakhapatnam, Andhra Pradesh</p>
+                        <p className="text-white/80">+91 9676 247755</p>
                         <p className="text-white/80">✉️ reservations@kgbhotels.com</p>
                     </div>
 

@@ -3,10 +3,10 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
 export const metadata = {
-  title: "KGB Hotels | Premium Hospitality in Visakhapatnam",
+  title: "KGB Hotels Visakhapatnam | Corporate & Luxury Hotel Stays",
   description:
-    "Discover luxury stays at KGB Hotels - Three premium properties in Visakhapatnam for corporate, family, and leisure travelers. Book directly for the best rates.",
-  keywords: "hotels in Visakhapatnam, luxury stays, corporate hotels, beach resort, hospitality",
+    "Book premium hotels in Visakhapatnam - Cool River (corporate), All-Rounder (family), Beach View (tourism). Direct booking with best rates.",
+  keywords: "hotels in Visakhapatnam, corporate hotel Vizag, beach resort Visakhapatnam, luxury stays, hotel booking",
   viewport: {
     width: "device-width",
     initialScale: 1,

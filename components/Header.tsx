@@ -9,8 +9,8 @@ export default function Header() {
     const [hotelOpen, setHotelOpen] = useState(false)
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md border-b border-[var(--border-color)] shadow-md">
-            <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-[var(--border-color)] shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
@@ -71,21 +71,15 @@ export default function Header() {
                     </Link>
                 </nav>
 
-                {/* CTA Buttons (Desktop) */}
-                <div className="hidden md:flex gap-3">
+                {/* CTA Button (Desktop) */}
+                <div className="hidden md:block">
                     <a
                         href="https://wa.me/919676247755"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2.5 rounded-lg bg-accent text-white font-bold text-sm hover:bg-accent-light transition-all shadow-md hover:shadow-lg"
+                        className="px-6 py-2.5 bg-accent text-white font-semibold text-sm rounded hover:bg-accent-light"
                     >
                         Enquire
-                    </a>
-                    <a
-                        href="tel:+919676247755"
-                        className="px-6 py-2.5 rounded-lg border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all"
-                    >
-                        Call
                     </a>
                 </div>
 
@@ -160,11 +154,11 @@ export default function Header() {
             )}
 
             {/* Sticky Mobile CTA Bar */}
-            <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--border-color)] shadow-2xl z-40">
-                <div className="flex gap-2 p-3 max-w-7xl mx-auto">
+            <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--border-color)] shadow-lg z-40">
+                <div className="flex gap-2 p-3">
                     <a
                         href="tel:+919676247755"
-                        className="flex-1 py-3 bg-primary text-white font-bold text-sm rounded-lg hover:bg-primary-light transition-all"
+                        className="flex-1 py-3 bg-primary text-white font-semibold text-sm text-center rounded hover:bg-primary-light"
                     >
                         Call
                     </a>
@@ -172,7 +166,7 @@ export default function Header() {
                         href="https://wa.me/919676247755"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 py-3 bg-accent text-white font-bold text-sm rounded-lg hover:bg-accent-light transition-all"
+                        className="flex-1 py-3 bg-accent text-white font-semibold text-sm text-center rounded hover:bg-accent-light"
                     >
                         Enquire
                     </a>
