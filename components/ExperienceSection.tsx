@@ -1,3 +1,4 @@
+"use client"
 import ExperienceCard from "./ExperienceCard"
 
 export default function ExperienceSection() {
