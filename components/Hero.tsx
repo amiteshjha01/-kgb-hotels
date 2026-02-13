@@ -124,13 +124,6 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll Indicator - Improved Design */}
-            <div className="absolute bottom-8 lg:bottom-12 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-3">
-                <div className="text-white/90 text-sm font-medium tracking-wide drop-shadow-lg">Scroll to Explore</div>
-                <div className="w-6 h-10 border-2 border-white/80 rounded-full flex items-start justify-center p-2 animate-bounce-slow shadow-lg">
-                    <div className="w-1.5 h-2 bg-white rounded-full animate-scroll-dot"></div>
-                </div>
-            </div>
 
             {/* Floating Feature Cards - Enhanced Design */}
 
