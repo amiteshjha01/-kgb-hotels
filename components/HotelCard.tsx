@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { generateWhatsAppLink } from "@/lib/whatsapp"
 
 type HotelCardProps = {
     title: string

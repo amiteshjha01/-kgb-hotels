@@ -1,3 +1,4 @@
+"use client"
 import HotelCard from "./HotelCard"
 
 export default function HotelsSection() {
