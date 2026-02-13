@@ -13,17 +13,15 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
 
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="max-w-[140px] md:max-w-[160px] h-auto">
-                        <Image
-                            src="/logo.jpeg"
-                            alt="KGB Hotels Logo"
-                            width={160}
-                            height={50}
-                            priority
-                            className="w-full h-auto"
-                        />
-                    </div>
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/logo.jpeg"
+                        alt="KGB Hotels Logo"
+                        width={160}
+                        height={50}
+                        priority
+                        style={{ width: "auto", height: "auto" }}
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}
