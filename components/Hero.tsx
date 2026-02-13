@@ -133,56 +133,7 @@ export default function Hero() {
             </div>
 
             {/* Floating Feature Cards - Enhanced Design */}
-            <div className="absolute bottom-0 left-0 right-0 z-20 hidden lg:block pb-12">
-                <div className="max-w-7xl mx-auto px-8">
-                    <div className="grid grid-cols-3 gap-6 xl:gap-8">
-                        {/* Feature 1 */}
-                        <div className="group bg-white/15 backdrop-blur-xl border-2 border-white/30 rounded-3xl p-6 xl:p-8 hover:bg-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 cursor-pointer shadow-2xl">
-                            <div className="flex items-start gap-5">
-                                <div className="w-14 h-14 xl:w-16 xl:h-16 bg-gradient-to-br from-blue-500/30 to-blue-600/30 rounded-2xl flex items-center justify-center group-hover:from-blue-500/40 group-hover:to-blue-600/40 transition-all shadow-lg">
-                                    <svg className="w-7 h-7 xl:w-8 xl:h-8 text-blue-300 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                                    </svg>
-                                </div>
-                                {/* <div>
-                                    <h3 className="text-white font-bold text-lg xl:text-xl mb-2 drop-shadow-lg">3 Unique Hotels</h3>
-                                    <p className="text-white/90 text-sm xl:text-base leading-relaxed drop-shadow-md">From riverside to beachfront, find your perfect stay</p>
-                                </div> */}
-                            </div>
-                        </div>
 
-                        {/* Feature 2 */}
-                        <div className="group bg-white/15 backdrop-blur-xl border-2 border-white/30 rounded-3xl p-6 xl:p-8 hover:bg-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 cursor-pointer shadow-2xl">
-                            <div className="flex items-start gap-5">
-                                <div className="w-14 h-14 xl:w-16 xl:h-16 bg-gradient-to-br from-green-500/30 to-green-600/30 rounded-2xl flex items-center justify-center group-hover:from-green-500/40 group-hover:to-green-600/40 transition-all shadow-lg">
-                                    <svg className="w-7 h-7 xl:w-8 xl:h-8 text-green-300 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 className="text-white font-bold text-lg xl:text-xl mb-2 drop-shadow-lg">24/7 Support</h3>
-                                    <p className="text-white/90 text-sm xl:text-base leading-relaxed drop-shadow-md">Round-the-clock assistance for all your needs</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Feature 3 */}
-                        <div className="group bg-white/15 backdrop-blur-xl border-2 border-white/30 rounded-3xl p-6 xl:p-8 hover:bg-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 cursor-pointer shadow-2xl">
-                            <div className="flex items-start gap-5">
-                                <div className="w-14 h-14 xl:w-16 xl:h-16 bg-gradient-to-br from-purple-500/30 to-purple-600/30 rounded-2xl flex items-center justify-center group-hover:from-purple-500/40 group-hover:to-purple-600/40 transition-all shadow-lg">
-                                    <svg className="w-7 h-7 xl:w-8 xl:h-8 text-purple-300 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 className="text-white font-bold text-lg xl:text-xl mb-2 drop-shadow-lg">Best Price</h3>
-                                    <p className="text-white/90 text-sm xl:text-base leading-relaxed drop-shadow-md">Guaranteed lowest rates when you book direct</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             {/* CSS Animations */}
             <style jsx>{`
