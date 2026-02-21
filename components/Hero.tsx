@@ -91,7 +91,7 @@ export default function Hero() {
 
                 {/* Stats */}
                 <div className={`grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-xl mx-auto transition-all duration-700 delay-6 ${visible ? "opacity-100" : "opacity-0"}`}>
-                    {[["3", "Properties"], ["24", "Rooms"], ["24/7", "Check-In"], ["4★", "Rating"]].map(([n, l]) => (
+                    {[["3", "Properties"], ["90+", "Rooms"], ["24/7", "Check-In"], ["4★", "Rating"]].map(([n, l]) => (
                         <div key={l} className="text-center">
                             <div className="gold-text font-serif font-bold" style={{ fontSize: "1.8rem", lineHeight: 1.1 }}>{n}</div>
                             <div className="label mt-1" style={{ fontSize: "0.58rem" }}>{l}</div>

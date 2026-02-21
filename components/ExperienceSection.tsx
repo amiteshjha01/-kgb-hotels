@@ -67,7 +67,7 @@ export default function ExperienceSection() {
                 {/* Stats */}
                 <div className="rounded-3xl overflow-hidden bg-navy-900 border border-gold-400/15">
                     <div className="grid grid-cols-2 md:grid-cols-4">
-                        {[["3", "Hotel Properties"], ["24", "Premium Rooms"], ["24/7", "Check-In Available"], ["4+", "Room Types"]].map(([n, l], i) => (
+                        {[["3", "Hotel Properties"], ["90+", "Premium Rooms"], ["24/7", "Check-In Available"], ["4+", "Room Types"]].map(([n, l], i) => (
                             <div key={l} className={`text-center py-10 px-4 ${i < 3 ? "border-r border-gold-400/10" : ""} ${i < 2 ? "border-b border-gold-400/10 md:border-b-0" : ""}`}>
                                 <div className="gold-text font-serif font-bold" style={{ fontSize: "clamp(2rem,4vw,3rem)", lineHeight: 1.1 }}>{n}</div>
                                 <div className="label mt-2" style={{ fontSize: "0.58rem" }}>{l}</div>
