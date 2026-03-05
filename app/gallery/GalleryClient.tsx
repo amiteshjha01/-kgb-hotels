@@ -21,29 +21,29 @@ const galleryImages = [
     // { src: "/gallery/cool-river/9.jpg", hotel: "cool-river", title: "Building Exterior", label: "KGB Coolriver" },
     // { src: "/gallery/cool-river/10.jpg", hotel: "cool-river", title: "Night View", label: "KGB Coolriver" },
 
-    // ── KGB LEGEND GRAND ── (folder: public/gallery/all-rounder/)
-    { src: "/gallery/all-rounder/hotel.jpg", hotel: "legend-grand", title: "Hotel Exterior", label: "KGB Legend Grand" },
-    { src: "/gallery/all-rounder/3.jpg", hotel: "legend-grand", title: "Elegant Interiors", label: "KGB Legend Grand" },
-    { src: "/gallery/all-rounder/bed.avif", hotel: "legend-grand", title: "Comfortable Bedroom", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/4.jpg", hotel: "legend-grand", title: "Family Room", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/5.jpg", hotel: "legend-grand", title: "Dining Area", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/6.jpg", hotel: "legend-grand", title: "Reception", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/7.jpg", hotel: "legend-grand", title: "Parking Area", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/8.jpg", hotel: "legend-grand", title: "Room View", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/9.jpg", hotel: "legend-grand", title: "Building Front", label: "KGB Legend Grand" },
-    // { src: "/gallery/all-rounder/10.jpg", hotel: "legend-grand", title: "Night View", label: "KGB Legend Grand" },
+    // ── KGB LEGEND GRAND ── (folder: public/gallery/legend-grand/)
+    { src: "/gallery/legend-grand/hotel.jpg", hotel: "legend-grand", title: "Hotel Exterior", label: "KGB Legend Grand" },
+    { src: "/gallery/legend-grand/3.jpg", hotel: "legend-grand", title: "Elegant Interiors", label: "KGB Legend Grand" },
+    { src: "/gallery/legend-grand/bed.avif", hotel: "legend-grand", title: "Comfortable Bedroom", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/4.jpg", hotel: "legend-grand", title: "Family Room", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/5.jpg", hotel: "legend-grand", title: "Dining Area", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/6.jpg", hotel: "legend-grand", title: "Reception", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/7.jpg", hotel: "legend-grand", title: "Parking Area", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/8.jpg", hotel: "legend-grand", title: "Room View", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/9.jpg", hotel: "legend-grand", title: "Building Front", label: "KGB Legend Grand" },
+    // { src: "/gallery/legend-grand/10.jpg", hotel: "legend-grand", title: "Night View", label: "KGB Legend Grand" },
 
-    // ── KGB VILLA HOMES ── (folder: public/gallery/beach-view/)
-    { src: "/gallery/beach-view/1.jpg", hotel: "villa-homes", title: "Villa Exterior", label: "KGB Villa Homes" },
-    { src: "/gallery/beach-view/2.jpg", hotel: "villa-homes", title: "Scenic Views", label: "KGB Villa Homes" },
-    { src: "/gallery/beach-view/3.jpg", hotel: "villa-homes", title: "Coastal Elegance", label: "KGB Villa Homes" },
-    { src: "/gallery/beach-view/bed.avif", hotel: "villa-homes", title: "Cozy Bedroom", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/5.jpg", hotel: "villa-homes", title: "Family Room", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/6.jpg", hotel: "villa-homes", title: "Garden Area", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/7.jpg", hotel: "villa-homes", title: "Living Room", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/8.jpg", hotel: "villa-homes", title: "Kitchen", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/9.jpg", hotel: "villa-homes", title: "Balcony View", label: "KGB Villa Homes" },
-    // { src: "/gallery/beach-view/10.jpg", hotel: "villa-homes", title: "Night Ambience", label: "KGB Villa Homes" },
+    // ── KGB VILLA HOMES ── (folder: public/gallery/villa homes/)
+    { src: "/gallery/villa homes/1.jpg", hotel: "villa-homes", title: "Villa Exterior", label: "KGB Villa Homes" },
+    { src: "/gallery/villa homes/2.jpg", hotel: "villa-homes", title: "Scenic Views", label: "KGB Villa Homes" },
+    { src: "/gallery/villa homes/3.jpg", hotel: "villa-homes", title: "Coastal Elegance", label: "KGB Villa Homes" },
+    { src: "/gallery/villa homes/bed.avif", hotel: "villa-homes", title: "Cozy Bedroom", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/5.jpg", hotel: "villa-homes", title: "Family Room", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/6.jpg", hotel: "villa-homes", title: "Garden Area", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/7.jpg", hotel: "villa-homes", title: "Living Room", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/8.jpg", hotel: "villa-homes", title: "Kitchen", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/9.jpg", hotel: "villa-homes", title: "Balcony View", label: "KGB Villa Homes" },
+    // { src: "/gallery/villa homes/10.jpg", hotel: "villa-homes", title: "Night Ambience", label: "KGB Villa Homes" },
 ]
 
 const filters = [
