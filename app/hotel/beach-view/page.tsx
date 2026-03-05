@@ -51,10 +51,20 @@ export default function BeachViewHotelPage() {
             ctaHeading="Ready for a Home Away From Home?"
             ctaDesc="KGB Villa Homes is the warmest hotel in Vizag — built for families and tourists who want genuine hospitality. Book directly via WhatsApp for instant confirmation and the best rates."
             photos={[
+                /* ── VILLA HOMES SELECTED PHOTOS ──
+                   Add your best photos here. Just change the src path and caption.
+                   Images go in: public/gallery/beach-view/
+                */
                 { src: "/gallery/beach-view/1.jpg", caption: "Villa Exterior" },
                 { src: "/gallery/beach-view/2.jpg", caption: "Scenic Views" },
                 { src: "/gallery/beach-view/3.jpg", caption: "Coastal Elegance" },
                 { src: "/gallery/beach-view/bed.avif", caption: "Cozy Bedroom" },
+                // { src: "/gallery/beach-view/5.jpg", caption: "Family Room" },
+                // { src: "/gallery/beach-view/6.jpg", caption: "Garden Area" },
+                // { src: "/gallery/beach-view/7.jpg", caption: "Living Room" },
+                // { src: "/gallery/beach-view/8.jpg", caption: "Kitchen" },
+                // { src: "/gallery/beach-view/9.jpg", caption: "Balcony View" },
+                // { src: "/gallery/beach-view/10.jpg", caption: "Night Ambience" },
             ]}
             mapsLink="https://maps.app.goo.gl/jt8CG54gUyHdtVpT9"
             backHref="/"

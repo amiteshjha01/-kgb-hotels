@@ -3,21 +3,54 @@ import { useState } from "react"
 import Image from "next/image"
 
 const galleryImages = [
-    { src: "/gallery/cool-river/1.jpg", hotel: "cool-river", title: "Riverside Luxury", label: "KGB Coolriver" },
-    { src: "/gallery/cool-river/2.jpg", hotel: "cool-river", title: "Premium Suites", label: "KGB Coolriver" },
+    /* ═══════════════════════════════════════════════════════
+       GALLERY PAGE — ALL IMAGES FROM ALL HOTELS
+       Add every image here. Put files in: public/gallery/<hotel-folder>/
+       The gallery page shows ALL entries and lets guests filter by hotel.
+    ═══════════════════════════════════════════════════════ */
+
+    // ── KGB COOLRIVER ── (folder: public/gallery/cool-river/)
+    { src: "/gallery/cool-river/1.jpg", hotel: "cool-river", title: "Lobby & Reception", label: "KGB Coolriver" },
+    { src: "/gallery/cool-river/2.jpg", hotel: "cool-river", title: "Premium Room", label: "KGB Coolriver" },
     { src: "/gallery/cool-river/3.jpg", hotel: "cool-river", title: "Executive Comfort", label: "KGB Coolriver" },
-    { src: "/gallery/all-rounder/hotel.jpg", hotel: "all-rounder", title: "Modern Comfort", label: "KGB Legend Grand" },
-    { src: "/gallery/all-rounder/3.jpg", hotel: "all-rounder", title: "Elegant Interiors", label: "KGB Legend Grand" },
-    { src: "/gallery/beach-view/1.jpg", hotel: "beach-view", title: "Villa Warmth", label: "KGB Villa Homes" },
-    { src: "/gallery/beach-view/2.jpg", hotel: "beach-view", title: "Scenic Views", label: "KGB Villa Homes" },
-    { src: "/gallery/beach-view/3.jpg", hotel: "beach-view", title: "Coastal Elegance", label: "KGB Villa Homes" },
+    { src: "/gallery/cool-river/bed.avif", hotel: "cool-river", title: "Luxury Bedroom", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/5.jpg", hotel: "cool-river", title: "Restaurant", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/6.jpg", hotel: "cool-river", title: "Conference Room", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/7.jpg", hotel: "cool-river", title: "Bathroom", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/8.jpg", hotel: "cool-river", title: "Corridor", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/9.jpg", hotel: "cool-river", title: "Building Exterior", label: "KGB Coolriver" },
+    // { src: "/gallery/cool-river/10.jpg", hotel: "cool-river", title: "Night View", label: "KGB Coolriver" },
+
+    // ── KGB LEGEND GRAND ── (folder: public/gallery/all-rounder/)
+    { src: "/gallery/all-rounder/hotel.jpg", hotel: "legend-grand", title: "Hotel Exterior", label: "KGB Legend Grand" },
+    { src: "/gallery/all-rounder/3.jpg", hotel: "legend-grand", title: "Elegant Interiors", label: "KGB Legend Grand" },
+    { src: "/gallery/all-rounder/bed.avif", hotel: "legend-grand", title: "Comfortable Bedroom", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/4.jpg", hotel: "legend-grand", title: "Family Room", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/5.jpg", hotel: "legend-grand", title: "Dining Area", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/6.jpg", hotel: "legend-grand", title: "Reception", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/7.jpg", hotel: "legend-grand", title: "Parking Area", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/8.jpg", hotel: "legend-grand", title: "Room View", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/9.jpg", hotel: "legend-grand", title: "Building Front", label: "KGB Legend Grand" },
+    // { src: "/gallery/all-rounder/10.jpg", hotel: "legend-grand", title: "Night View", label: "KGB Legend Grand" },
+
+    // ── KGB VILLA HOMES ── (folder: public/gallery/beach-view/)
+    { src: "/gallery/beach-view/1.jpg", hotel: "villa-homes", title: "Villa Exterior", label: "KGB Villa Homes" },
+    { src: "/gallery/beach-view/2.jpg", hotel: "villa-homes", title: "Scenic Views", label: "KGB Villa Homes" },
+    { src: "/gallery/beach-view/3.jpg", hotel: "villa-homes", title: "Coastal Elegance", label: "KGB Villa Homes" },
+    { src: "/gallery/beach-view/bed.avif", hotel: "villa-homes", title: "Cozy Bedroom", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/5.jpg", hotel: "villa-homes", title: "Family Room", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/6.jpg", hotel: "villa-homes", title: "Garden Area", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/7.jpg", hotel: "villa-homes", title: "Living Room", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/8.jpg", hotel: "villa-homes", title: "Kitchen", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/9.jpg", hotel: "villa-homes", title: "Balcony View", label: "KGB Villa Homes" },
+    // { src: "/gallery/beach-view/10.jpg", hotel: "villa-homes", title: "Night Ambience", label: "KGB Villa Homes" },
 ]
 
 const filters = [
     { label: "All Hotels", value: "all", icon: "🏨" },
     { label: "KGB Coolriver", value: "cool-river", icon: "🏢" },
-    { label: "KGB Legend Grand", value: "all-rounder", icon: "⭐" },
-    { label: "KGB Villa Homes", value: "beach-view", icon: "🏡" },
+    { label: "KGB Legend Grand", value: "legend-grand", icon: "⭐" },
+    { label: "KGB Villa Homes", value: "villa-homes", icon: "🏡" },
 ]
 
 export default function GalleryClient() {

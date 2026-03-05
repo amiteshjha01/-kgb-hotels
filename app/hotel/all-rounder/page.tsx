@@ -51,9 +51,20 @@ export default function AllRounderHotelPage() {
             ctaHeading="Plan Your Perfect Vizag Stay"
             ctaDesc="Families, corporates and tourists love KGB Legend Grand for its unbeatable combination of comfort, value, and hospitality. Book via WhatsApp for instant confirmation."
             photos={[
+                /* ── LEGEND GRAND SELECTED PHOTOS ──
+                   Add your best photos here. Just change the src path and caption.
+                   Images go in: public/gallery/all-rounder/
+                */
                 { src: "/gallery/all-rounder/hotel.jpg", caption: "Hotel Exterior" },
                 { src: "/gallery/all-rounder/3.jpg", caption: "Elegant Interiors" },
                 { src: "/gallery/all-rounder/bed.avif", caption: "Comfortable Bedroom" },
+                // { src: "/gallery/all-rounder/4.jpg", caption: "Family Room" },
+                // { src: "/gallery/all-rounder/5.jpg", caption: "Dining Area" },
+                // { src: "/gallery/all-rounder/6.jpg", caption: "Reception" },
+                // { src: "/gallery/all-rounder/7.jpg", caption: "Parking Area" },
+                // { src: "/gallery/all-rounder/8.jpg", caption: "Room View" },
+                // { src: "/gallery/all-rounder/9.jpg", caption: "Building Front" },
+                // { src: "/gallery/all-rounder/10.jpg", caption: "Night View" },
             ]}
             mapsLink="https://maps.app.goo.gl/BLPF3ahn7erbB4LM9"
             backHref="/"

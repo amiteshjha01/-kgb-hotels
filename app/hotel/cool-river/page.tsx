@@ -51,10 +51,21 @@ export default function CoolRiverHotelPage() {
             ctaHeading="Ready to Book Your Corporate Stay?"
             ctaDesc="Secure your room at KGB Coolriver Hotel and experience premium business hospitality in Visakhapatnam. WhatsApp us for instant confirmation."
             photos={[
+                /* ── COOLRIVER SELECTED PHOTOS ──
+                   Add your best photos here. Just change the src path and caption.
+                   Images go in: public/gallery/cool-river/
+                   You can add or remove entries as needed.
+                */
                 { src: "/gallery/cool-river/1.jpg", caption: "Lobby & Reception" },
                 { src: "/gallery/cool-river/2.jpg", caption: "Premium Room" },
                 { src: "/gallery/cool-river/3.jpg", caption: "Hotel View" },
                 { src: "/gallery/cool-river/bed.avif", caption: "Luxury Bedroom" },
+                // { src: "/gallery/cool-river/5.jpg", caption: "Restaurant" },
+                // { src: "/gallery/cool-river/6.jpg", caption: "Conference Room" },
+                // { src: "/gallery/cool-river/7.jpg", caption: "Bathroom" },
+                // { src: "/gallery/cool-river/8.jpg", caption: "Corridor" },
+                // { src: "/gallery/cool-river/9.jpg", caption: "Building Exterior" },
+                // { src: "/gallery/cool-river/10.jpg", caption: "Night View" },
             ]}
             mapsLink="https://maps.app.goo.gl/iNkFuPg1n8fTkXKy7"
             backHref="/"
