@@ -14,7 +14,7 @@ export default function BeachViewHotelPage() {
             badge="Homely Stay for Families & Tourists"
             badgeIcon="🏡"
             tagline="A warm, home-like retreat in Visakhapatnam — experience authentic hospitality and genuine warmth that makes families and tourists feel truly at home."
-            image="/hotels/beach-view.jpg"
+            image="/gallery/villa homes/logo.jpeg"
             phone1="9666597755"
             phone2="8367214304"
             waPhone="9666597755"
@@ -55,16 +55,11 @@ export default function BeachViewHotelPage() {
                    Add your best photos here. Just change the src path and caption.
                    Images go in: public/gallery/beach-view/
                 */
-                { src: "/gallery/beach-view/1.jpg", caption: "Villa Exterior" },
-                { src: "/gallery/beach-view/2.jpg", caption: "Scenic Views" },
-                { src: "/gallery/beach-view/3.jpg", caption: "Coastal Elegance" },
-                { src: "/gallery/beach-view/bed.avif", caption: "Cozy Bedroom" },
-                // { src: "/gallery/beach-view/5.jpg", caption: "Family Room" },
-                // { src: "/gallery/beach-view/6.jpg", caption: "Garden Area" },
-                // { src: "/gallery/beach-view/7.jpg", caption: "Living Room" },
-                // { src: "/gallery/beach-view/8.jpg", caption: "Kitchen" },
-                // { src: "/gallery/beach-view/9.jpg", caption: "Balcony View" },
-                // { src: "/gallery/beach-view/10.jpg", caption: "Night Ambience" },
+                { src: "/gallery/villa homes/front.jpeg", caption: "Front View" },
+                { src: "/gallery/villa homes/fo.jpeg", caption: "Reception Area" },
+                { src: "/gallery/villa homes/lobby.jpeg", caption: "Lobby Waiting Area" },
+                { src: "/gallery/villa homes/bed 3.jpeg", caption: "Deluxe Room" },
+                { src: "/gallery/villa homes/wr1.jpeg", caption: "Modern Washroom" },
             ]}
             mapsLink="https://maps.app.goo.gl/jt8CG54gUyHdtVpT9"
             backHref="/"

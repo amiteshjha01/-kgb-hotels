@@ -14,7 +14,7 @@ export default function CoolRiverHotelPage() {
             badge="Corporate Excellence"
             badgeIcon="🏢"
             tagline="Premium corporate hospitality designed for business travelers seeking elegance, efficiency, and exceptional service in the heart of Visakhapatnam."
-            image="/hotels/cool-river.png"
+            image="/gallery/cool-river/logo.jpeg"
             phone1="9676247755"
             phone2="9666787755"
             waPhone="9676247755"
@@ -56,16 +56,25 @@ export default function CoolRiverHotelPage() {
                    Images go in: public/gallery/cool-river/
                    You can add or remove entries as needed.
                 */
-                { src: "/gallery/cool-river/1.jpg", caption: "Lobby & Reception" },
-                { src: "/gallery/cool-river/2.jpg", caption: "Premium Room" },
-                { src: "/gallery/cool-river/3.jpg", caption: "Hotel View" },
-                { src: "/gallery/cool-river/bed.avif", caption: "Luxury Bedroom" },
-                // { src: "/gallery/cool-river/5.jpg", caption: "Restaurant" },
-                // { src: "/gallery/cool-river/6.jpg", caption: "Conference Room" },
-                // { src: "/gallery/cool-river/7.jpg", caption: "Bathroom" },
-                // { src: "/gallery/cool-river/8.jpg", caption: "Corridor" },
-                // { src: "/gallery/cool-river/9.jpg", caption: "Building Exterior" },
-                // { src: "/gallery/cool-river/10.jpg", caption: "Night View" },
+                // { src: "/gallery/cool-river/logo.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/fo desk.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/waiting area.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/card.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/sing1.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/3.jpg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/wash.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/passage.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/lift.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/bed 1.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/bed 2.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/bed 3.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/bed 4.jpeg", caption: "KGB Coolriver" },
+                // { src: "/gallery/cool-river/bed 5.jpeg", caption: "KGB Coolriver" },
+                { src: "/gallery/cool-river/fo desk.jpeg", caption: "Reception Desk" },
+                { src: "/gallery/cool-river/waiting area.jpeg", caption: "Lobby & Waiting Area" },
+                { src: "/gallery/cool-river/bed 2.jpeg", caption: "Premium Bed Room" },
+                { src: "/gallery/cool-river/bed 5.jpeg", caption: "Family Bed Room" },
+                { src: "/gallery/cool-river/wash.jpeg", caption: "Modern Bathroom" },
             ]}
             mapsLink="https://maps.app.goo.gl/iNkFuPg1n8fTkXKy7"
             backHref="/"
