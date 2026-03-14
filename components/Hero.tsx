@@ -15,7 +15,7 @@ export default function Hero() {
 
             {/* Background */}
             <div className="absolute inset-0 bg-navy-950">
-                <Image src="/hero.jpg" alt="KGB Hotels Visakhapatnam — Luxury Hotel Stay" fill priority sizes="100vw"
+                <Image src="/logo-hero.jpg" alt="KGB Hotels Visakhapatnam — Luxury Hotel Stay" fill priority sizes="100vw"
                     className={`object-cover transition-opacity duration-1000 ${visible ? "opacity-100 animate-ken-burns" : "opacity-0"}`}
                     quality={95} />
                 {/* Cinematic overlays */}
