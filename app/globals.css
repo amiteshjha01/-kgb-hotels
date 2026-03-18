@@ -3,21 +3,21 @@
 
 /* ─── TAILWIND v4 CUSTOM THEME ─── */
 @theme {
-  --color-navy-950: #020C1B;
-  --color-navy-900: #071528;
-  --color-navy-800: #0D2040;
-  --color-navy-700: #142E58;
-  --color-navy-600: #1B3D72;
-  --color-gold-50: #FEFCE8;
-  --color-gold-100: #FDF6D0;
-  --color-gold-200: #FAE89A;
-  --color-gold-300: #F0D060;
-  --color-gold-400: #D4AF37;
-  --color-gold-500: #C9A84C;
-  --color-gold-600: #A8852A;
-  --color-gold-700: #7D601A;
-  --color-cream: #FAF7F0;
-  --color-ivory: #F5F0E8;
+  --color-navy-950: rgb(2, 12, 27);
+  --color-navy-900: rgb(7, 21, 40);
+  --color-navy-800: rgb(13, 32, 64);
+  --color-navy-700: rgb(20, 46, 88);
+  --color-navy-600: rgb(27, 61, 114);
+  --color-gold-50: rgb(254, 252, 232);
+  --color-gold-100: rgb(253, 246, 208);
+  --color-gold-200: rgb(250, 232, 154);
+  --color-gold-300: rgb(240, 208, 96);
+  --color-gold-400: rgb(212, 175, 55);
+  --color-gold-500: rgb(201, 168, 76);
+  --color-gold-600: rgb(168, 133, 42);
+  --color-gold-700: rgb(125, 96, 26);
+  --color-cream: rgb(250, 247, 240);
+  --color-ivory: rgb(245, 240, 232);
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -148,7 +148,6 @@ h3 {
 }
 
 /* ─── CARD ─── */
-
 .luxury-card {
   background: #0D2040;
   border: 1px solid rgba(212, 175, 55, 0.12);

@@ -2,68 +2,141 @@ import HotelPageLayout from "@/components/HotelPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "KGB Legend Grand Hotel | Budget Friendly Hotel in Visakhapatnam",
-    description: "KGB Legend Grand Hotel — quality stays at accessible rates for corporate guests, families & tourists in Vizag. 24hr check-in, WiFi, AC. Book via WhatsApp: 9000907755.",
-    keywords: ["KGB Legend Grand Hotel", "budget hotel Visakhapatnam", "affordable hotel Vizag", "family hotel Vizag", "hotel all guest types Vizag"],
+    title: "KGB Legend Grand Vizag | Best Budget Hotel in Visakhapatnam",
+    description:
+        "KGB Legend Grand Hotel in Vizag — best budget hotel for families, corporates & tourists. Near railway station & city center. Book now via WhatsApp 9000907755.",
+    keywords: [
+        "KGB Legend Grand Vizag",
+        "budget hotel Visakhapatnam",
+        "affordable hotel Vizag",
+        "best hotel in Vizag",
+        "family hotel Vizag",
+        "hotel near railway station Visakhapatnam",
+        "cheap hotel Vizag",
+        "corporate hotel Vizag",
+    ],
 }
 
-export default function AllRounderHotelPage() {
+export default function LegendGrandPage() {
     return (
-        <HotelPageLayout
-            name="KGB Legend Grand"
-            badge="Budget Friendly & All-Inclusive"
-            badgeIcon="⭐"
-            tagline="Quality accommodation at accessible rates — perfect for corporate guests, families and tourists seeking a comfortable and well-located Vizag stay."
-            image="/gallery/legend-grand/logo.jpeg"
-            phone1="9000907755"
-            phone2="9666587755"
-            waPhone="9000907755"
-            waMsg="Hello! I'm interested in staying at KGB Legend Grand Hotel in Visakhapatnam. Could you please share room availability, tariff details, and any special packages currently available? Thank you!"
-            stat1={["45", "Rooms"]}
-            stat2={["4.5★", "Guest Rating"]}
-            stat3={["24/7", "Check-In"]}
-            stat4={["All", "Guest Types"]}
-            about="KGB Legend Grand is the ideal choice for travelers who seek excellent value without compromising on comfort or service. With 45 thoughtfully designed rooms across multiple categories, the hotel warmly welcomes corporate professionals, family groups, friends, and individual tourists. Centrally located in Visakhapatnam, it provides easy access to key landmarks, markets, and the railway station."
-            keyFeatures={[
-                "45 Rooms Across Multiple Categories",
-                "Corporate & Family Friendly",
-                "24-Hour Check-In & Checkout",
-                "High-Speed WiFi in All Rooms",
-                "AC in All Rooms",
-                "Power Backup",
-                "Free Parking",
-                "Group & Family Packages Available",
-            ]}
-            roomTypes={[
-                { icon: "🛏️", title: "Standard Room", desc: "Clean, well-appointed single rooms with WiFi, AC, and all essential amenities — perfect for solo business travelers or overnight stays." },
-                { icon: "🏨", title: "Deluxe Room", desc: "Spacious double rooms with upgraded furnishings, ideal for couples, co-travelers, or guests who prefer extra space and comfort." },
-                { icon: "👨‍👩‍👧", title: "Family Room", desc: "Generously sized rooms for families of 3–4 with a warm, welcoming setup and all essential comforts for a memorable stay." },
-                { icon: "👑", title: "Premium Suite", desc: "Our best rooms with premium furnishings, large beds, and enhanced amenities — great for celebrating occasions or demanding maximum comfort." },
-            ]}
-            amenities={[
-                { icon: "📶", title: "High-Speed WiFi", desc: "Reliable broadband across all rooms for seamless work and entertainment throughout your stay." },
-                { icon: "❄️", title: "Air Conditioning", desc: "Individual climate control in every room ensuring perfect comfort regardless of the season." },
-                { icon: "⚡", title: "Power Backup", desc: "24-hour generator backup for uninterrupted comfort — no blackouts, ever." },
-                { icon: "🚗", title: "Free Parking", desc: "Secure, complimentary on-site parking for all guests — car or two-wheeler welcome." },
-                { icon: "🛎️", title: "Room Service", desc: "Attentive in-room dining and service throughout the day and night." },
-                { icon: "🕐", title: "24hr Check-In", desc: "Arrive at any hour — our 24-hour check-in ensures a smooth welcome anytime you land." },
-            ]}
-            ctaHeading="Plan Your Perfect Vizag Stay"
-            ctaDesc="Families, corporates and tourists love KGB Legend Grand for its unbeatable combination of comfort, value, and hospitality. Book via WhatsApp for instant confirmation."
-            photos={[
-                /* ── LEGEND GRAND SELECTED PHOTOS ──
-                   Add your best photos here. Just change the src path and caption.
-                   Images go in: public/gallery/all-rounder/
-                */
-                { src: "/gallery/legend-grand/reception desk.jpeg", caption: "Reception Desk" },
-                { src: "/gallery/legend-grand/waiting hall.jpeg", caption: "Waiting Hall Area" },
-                { src: "/gallery/legend-grand/outer.jpeg", caption: "Outer Waiting Area" },
-                { src: "/gallery/legend-grand/2 person bed.jpeg", caption: "Room Interior" },
-                { src: "/gallery/legend-grand/3 bed.jpeg", caption: "3 Bed Family Room" },
+        <>
+            {/* ✅ SCHEMA (GOOGLE BOOST) */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Hotel",
+                        name: "KGB Legend Grand Hotel",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Visakhapatnam",
+                            addressRegion: "Andhra Pradesh",
+                            addressCountry: "India",
+                        },
+                        telephone: "+91-9000907755",
+                        url: "https://kgbhotels.com/hotel/all-rounder",
+                        image: "https://kgbhotels.com/gallery/legend-grand/logo.jpeg",
+                        priceRange: "₹",
+                        description:
+                            "Affordable budget hotel in Vizag for families and corporate travelers.",
+                    }),
+                }}
+            />
 
-            ]}
-            mapsLink="https://maps.app.goo.gl/BLPF3ahn7erbB4LM9"
-            backHref="/"
-        />
+            <HotelPageLayout
+                name="KGB Legend Grand"
+                badge="Budget Friendly & All-Inclusive"
+                badgeIcon="⭐"
+
+                tagline="Best budget hotel in Vizag (Visakhapatnam) for families, corporates and tourists."
+
+                image="/gallery/legend-grand/logo.jpeg"
+
+                phone1="9000907755"
+                phone2="9666587755"
+                waPhone="9000907755"
+
+                waMsg="Hello! I want to book a room at KGB Legend Grand Hotel Vizag. Please share availability and pricing."
+
+                stat1={["45", "Rooms"]}
+                stat2={["4.5★", "Guest Rating"]}
+                stat3={["24/7", "Check-In"]}
+                stat4={["All", "Guest Types"]}
+
+                about="KGB Legend Grand is one of the best budget hotels in Vizag. Located near major city areas and the railway station, it offers affordable rooms, great comfort, and all essential amenities — perfect for families, corporate travelers, and tourists visiting Visakhapatnam."
+
+                keyFeatures={[
+                    "Best Budget Hotel in Vizag",
+                    "45 Rooms Available",
+                    "Family & Corporate Friendly",
+                    "24-Hour Check-In",
+                    "High-Speed WiFi",
+                    "AC Rooms",
+                    "Free Parking",
+                ]}
+
+                roomTypes={[
+                    {
+                        icon: "🛏️",
+                        title: "Standard Room",
+                        desc: "Affordable room in Vizag for solo travelers.",
+                    },
+                    {
+                        icon: "🏨",
+                        title: "Deluxe Room",
+                        desc: "Comfortable double room for couples and travelers.",
+                    },
+                    {
+                        icon: "👨‍👩‍👧",
+                        title: "Family Room",
+                        desc: "Spacious room for families visiting Vizag.",
+                    },
+                    {
+                        icon: "👑",
+                        title: "Premium Suite",
+                        desc: "Luxury suite at budget pricing in Vizag.",
+                    },
+                ]}
+
+                amenities={[
+                    {
+                        icon: "📶",
+                        title: "WiFi",
+                        desc: "Free high-speed internet in all rooms.",
+                    },
+                    {
+                        icon: "❄️",
+                        title: "AC Rooms",
+                        desc: "Fully air-conditioned rooms.",
+                    },
+                    {
+                        icon: "⚡",
+                        title: "Power Backup",
+                        desc: "24/7 electricity backup.",
+                    },
+                    {
+                        icon: "🚗",
+                        title: "Free Parking",
+                        desc: "Safe parking available.",
+                    },
+                ]}
+
+                ctaHeading="Book Budget Hotel in Vizag Now"
+                ctaDesc="Stay at KGB Legend Grand — best affordable hotel in Visakhapatnam. Book instantly via WhatsApp."
+
+                photos={[
+                    { src: "/gallery/legend-grand/reception desk.jpeg", caption: "Hotel Reception Vizag" },
+                    { src: "/gallery/legend-grand/waiting hall.jpeg", caption: "Lobby Area" },
+                    { src: "/gallery/legend-grand/outer.jpeg", caption: "Waiting Area" },
+                    { src: "/gallery/legend-grand/2 person bed.jpeg", caption: "Room Interior" },
+                    { src: "/gallery/legend-grand/3 bed.jpeg", caption: "Family Room" },
+                ]}
+
+                mapsLink="https://maps.app.goo.gl/BLPF3ahn7erbB4LM9"
+
+                backHref="/"
+            />
+        </>
     )
 }

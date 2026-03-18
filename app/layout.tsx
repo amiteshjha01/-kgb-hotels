@@ -12,17 +12,39 @@ export const metadata = {
     "KGB Hotels – Premium luxury hotel stays in Visakhapatnam (Vizag). Three world-class properties: KGB Coolriver for corporate guests, KGB Legend Grand for budget-friendly stays, KGB Villa Homes for families. Book instantly via WhatsApp: 9676247755. 24-hour check-in. Near RAM Nagar, RTC Complex & Railway Station.",
 
   keywords: [
+    // Brand
     "KGB Hotels Visakhapatnam",
-    "Hotels in Vizag",
-    "Vizag hotels",
     "KGB Coolriver hotel Vizag",
     "KGB Legend Grand hotel",
     "KGB Villa Homes",
-    "budget hotel Visakhapatnam",
-    "luxury hotel Visakhapatnam",
-    "hotels near RTC complex Vizag",
-    "hotels near railway station Visakhapatnam",
-    "Ram Nagar hotels",
+
+    // Primary
+    "hotels in visakhapatnam",
+    "hotels in vizag",
+    "best hotels in vizag",
+    "budget hotels in vizag",
+    "luxury hotels in visakhapatnam",
+    "affordable hotels in vizag",
+
+    // Local SEO (🔥 MOST IMPORTANT)
+    "hotels near RTC complex vizag",
+    "hotels near railway station visakhapatnam",
+    "hotels near ram nagar vizag",
+    "hotels near beach road vizag",
+    "hotels near vizag airport",
+    "ram nagar hotels vizag",
+
+    // Intent based
+    "book hotel in vizag",
+    "hotel booking vizag whatsapp",
+    "24 hour checkin hotels vizag",
+    "family hotels in vizag",
+    "corporate hotels in vizag",
+
+    // Long-tail (🔥 rank fast)
+    "best budget hotel near rtc complex vizag",
+    "luxury hotel near railway station visakhapatnam",
+    "family stay hotel in vizag near ram nagar",
   ],
 
   authors: [{ name: "KGB Hotels Visakhapatnam" }],

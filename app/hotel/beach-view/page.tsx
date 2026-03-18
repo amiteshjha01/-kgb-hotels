@@ -2,67 +2,141 @@ import HotelPageLayout from "@/components/HotelPageLayout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "KGB Villa Homes | Homely Family Hotel in Visakhapatnam",
-    description: "KGB Villa Homes — a warm, home-like retreat for families and tourists in Vizag. Spacious family rooms, free parking, WiFi. Book via WhatsApp: 9666597755.",
-    keywords: ["KGB Villa Homes", "family hotel Visakhapatnam", "homely stay Vizag", "tourist hotel Vizag", "villa hotel Visakhapatnam"],
+    title: "KGB Villa Homes Vizag | Best Family Hotel in Visakhapatnam",
+    description:
+        "Stay at KGB Villa Homes in Vizag — best family hotel near RTC Complex & Railway Station. Spacious rooms, homely stay, WiFi & parking. Book now via WhatsApp 9666597755.",
+    keywords: [
+        "KGB Villa Homes Vizag",
+        "family hotel Visakhapatnam",
+        "homely stay Vizag",
+        "best hotel in Vizag for family",
+        "hotel near RTC complex Vizag",
+        "hotel near railway station Visakhapatnam",
+        "tourist hotel Vizag",
+        "budget hotel Vizag",
+    ],
 }
 
-export default function BeachViewHotelPage() {
+export default function VillaHomesPage() {
     return (
-        <HotelPageLayout
-            name="KGB Villa Homes"
-            badge="Homely Stay for Families & Tourists"
-            badgeIcon="🏡"
-            tagline="A warm, home-like retreat in Visakhapatnam — experience authentic hospitality and genuine warmth that makes families and tourists feel truly at home."
-            image="/gallery/villa homes/logo.jpeg"
-            phone1="9666597755"
-            phone2="8367214304"
-            waPhone="9666597755"
-            waMsg="Hello! I'm looking for a comfortable family stay in Visakhapatnam and came across KGB Villa Homes. Could you please share availability, room types, and rates? Thank you!"
-            stat1={["30+", "Rooms"]}
-            stat2={["4.6★", "Guest Rating"]}
-            stat3={["24/7", "Check-In"]}
-            stat4={["100%", "Homely Feel"]}
-            about="KGB Villa Homes is designed specifically for families and leisure tourists who seek a genuine home-away-from-home experience. Unlike a standard hotel, Villa Homes provides a warm, relaxed atmosphere where guests can truly unwind and feel at ease. Conveniently located in Visakhapatnam near the RTC Complex and Railway Station, it is the perfect base for exploring the city's beaches, temples, and attractions while feeling completely comfortable."
-            keyFeatures={[
-                "Spacious Family Rooms",
-                "Home-Like Atmosphere & Warm Hospitality",
-                "24-Hour Check-In & Checkout",
-                "High-Speed WiFi",
-                "AC in All Rooms",
-                "Free Parking",
-                "Near RTC Complex & Railway Station",
-                "Ideal for Extended Family Stays",
-            ]}
-            roomTypes={[
-                { icon: "🛏️", title: "Standard Room", desc: "Clean, comfortable solo rooms with all essentials — perfect for individual tourists or business travelers on a leisure trip." },
-                { icon: "🏠", title: "Family Room", desc: "Spacious rooms with multiple beds and a homely layout — ideal for families of 3–4. Relax like you're at home with all modern comforts." },
-                { icon: "👨‍👩‍👧‍👦", title: "Large Family Suite", desc: "Our biggest family accommodation — generously sized with a living area, multiple beds, and premium amenities for large family groups." },
-                { icon: "🌿", title: "Deluxe Room", desc: "Upgraded rooms with premium furnishings and enhanced space — perfect for couples or guests seeking a touch more luxury during their stay." },
-            ]}
-            amenities={[
-                { icon: "📶", title: "High-Speed WiFi", desc: "Stay connected with family back home or stream entertainment throughout your stay." },
-                { icon: "❄️", title: "Air Conditioning", desc: "Every room fully air-conditioned — cool comfort even in Vizag's warm coastal climate." },
-                { icon: "🚗", title: "Free Parking", desc: "Safe, complimentary on-site parking for all guests — cars and two-wheelers welcome." },
-                { icon: "⚡", title: "Power Backup", desc: "24-hour backup generator — no interruptions to your family stay, ever." },
-                { icon: "🕐", title: "Flexible Check-In", desc: "Arrive at any time — our 24-hour check-in ensures a warm welcome regardless of your travel schedule." },
-                { icon: "🛎️", title: "Caring Staff", desc: "Our attentive and friendly staff treat every guest like family — personalized service you won't find elsewhere." },
-            ]}
-            ctaHeading="Ready for a Home Away From Home?"
-            ctaDesc="KGB Villa Homes is the warmest hotel in Vizag — built for families and tourists who want genuine hospitality. Book directly via WhatsApp for instant confirmation and the best rates."
-            photos={[
-                /* ── VILLA HOMES SELECTED PHOTOS ──
-                   Add your best photos here. Just change the src path and caption.
-                   Images go in: public/gallery/beach-view/
-                */
-                { src: "/gallery/villa homes/front.jpeg", caption: "Front View" },
-                { src: "/gallery/villa homes/fo.jpeg", caption: "Reception Area" },
-                { src: "/gallery/villa homes/lobby.jpeg", caption: "Lobby Waiting Area" },
-                { src: "/gallery/villa homes/bed 3.jpeg", caption: "Deluxe Room" },
-                { src: "/gallery/villa homes/wr1.jpeg", caption: "Modern Washroom" },
-            ]}
-            mapsLink="https://maps.app.goo.gl/jt8CG54gUyHdtVpT9"
-            backHref="/"
-        />
+        <>
+            {/* ✅ SCHEMA (IMPORTANT FOR GOOGLE) */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Hotel",
+                        name: "KGB Villa Homes",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Visakhapatnam",
+                            addressRegion: "Andhra Pradesh",
+                            addressCountry: "India",
+                        },
+                        telephone: "+91-9666597755",
+                        url: "https://kgbhotels.com/hotel/beach-view",
+                        image: "https://kgbhotels.com/gallery/villa homes/logo.jpeg",
+                        priceRange: "₹",
+                        description:
+                            "Family hotel in Vizag offering homely stay near RTC Complex and Railway Station.",
+                    }),
+                }}
+            />
+
+            <HotelPageLayout
+                name="KGB Villa Homes"
+                badge="Homely Stay for Families & Tourists"
+                badgeIcon="🏡"
+
+                tagline="Best family hotel in Vizag (Visakhapatnam) offering a homely stay experience for families and tourists."
+
+                image="/gallery/villa homes/logo.jpeg"
+
+                phone1="9666597755"
+                phone2="8367214304"
+                waPhone="9666597755"
+
+                waMsg="Hello! I want to book a family room at KGB Villa Homes Vizag. Please share availability and price."
+
+                stat1={["30+", "Rooms"]}
+                stat2={["4.6★", "Guest Rating"]}
+                stat3={["24/7", "Check-In"]}
+                stat4={["100%", "Homely Stay"]}
+
+                about="KGB Villa Homes is one of the best family hotels in Vizag. Located near RTC Complex and Railway Station, it offers spacious rooms, a homely environment, and all essential amenities — perfect for tourists and family stays in Visakhapatnam."
+
+                keyFeatures={[
+                    "Best Family Hotel in Vizag",
+                    "Spacious Family Rooms",
+                    "24-Hour Check-In",
+                    "High-Speed WiFi",
+                    "AC Rooms",
+                    "Free Parking",
+                    "Near RTC Complex & Railway Station",
+                ]}
+
+                roomTypes={[
+                    {
+                        icon: "🛏️",
+                        title: "Standard Room",
+                        desc: "Affordable room in Vizag for solo travelers and tourists.",
+                    },
+                    {
+                        icon: "🏠",
+                        title: "Family Room",
+                        desc: "Spacious family room in Vizag — perfect for 3–4 guests.",
+                    },
+                    {
+                        icon: "👨‍👩‍👧‍👦",
+                        title: "Large Family Suite",
+                        desc: "Best suite for big families visiting Vizag.",
+                    },
+                    {
+                        icon: "🌿",
+                        title: "Deluxe Room",
+                        desc: "Premium room in Vizag with extra comfort.",
+                    },
+                ]}
+
+                amenities={[
+                    {
+                        icon: "📶",
+                        title: "WiFi",
+                        desc: "Free high-speed internet in all rooms.",
+                    },
+                    {
+                        icon: "❄️",
+                        title: "AC Rooms",
+                        desc: "Fully air-conditioned rooms in Vizag.",
+                    },
+                    {
+                        icon: "🚗",
+                        title: "Free Parking",
+                        desc: "Safe parking available.",
+                    },
+                    {
+                        icon: "⚡",
+                        title: "Power Backup",
+                        desc: "24/7 electricity backup.",
+                    },
+                ]}
+
+                ctaHeading="Book Your Family Hotel in Vizag Now"
+                ctaDesc="Stay at KGB Villa Homes — best homely hotel in Visakhapatnam. Book instantly via WhatsApp."
+
+                photos={[
+                    { src: "/gallery/villa homes/front.jpeg", caption: "Hotel Front View Vizag" },
+                    { src: "/gallery/villa homes/fo.jpeg", caption: "Reception Area" },
+                    { src: "/gallery/villa homes/lobby.jpeg", caption: "Lobby Area" },
+                    { src: "/gallery/villa homes/bed 3.jpeg", caption: "Family Room Vizag" },
+                    { src: "/gallery/villa homes/wr1.jpeg", caption: "Bathroom" },
+                ]}
+
+                mapsLink="https://maps.app.goo.gl/jt8CG54gUyHdtVpT9"
+
+                backHref="/"
+            />
+        </>
     )
 }
