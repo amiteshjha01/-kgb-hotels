@@ -18,7 +18,10 @@ export default function Header() {
 
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : ""
-        return () => (document.body.style.overflow = "")
+
+        return () => {
+            document.body.style.overflow = ""
+        }
     }, [open])
 
     const close = () => setOpen(false)
@@ -42,8 +45,8 @@ export default function Header() {
             {/* HEADER */}
             <header
                 className={`fixed left-0 right-0 z-50 transition ${scrolled
-                        ? "bg-navy-950/95 backdrop-blur border-b border-gold-400/10"
-                        : "bg-transparent"
+                    ? "bg-navy-950/95 backdrop-blur border-b border-gold-400/10"
+                    : "bg-transparent"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4">
@@ -72,8 +75,8 @@ export default function Header() {
                                     key={href}
                                     href={href}
                                     className={`text-sm relative ${pathname === href
-                                            ? "text-gold-300"
-                                            : "text-white/70 hover:text-gold-300"
+                                        ? "text-gold-300"
+                                        : "text-white/70 hover:text-gold-300"
                                         }`}
                                 >
                                     {label}
@@ -81,8 +84,8 @@ export default function Header() {
                                     {/* underline */}
                                     <span
                                         className={`absolute -bottom-1 left-0 h-[1px] bg-gold-400 transition-all ${pathname === href
-                                                ? "w-full"
-                                                : "w-0 group-hover:w-full"
+                                            ? "w-full"
+                                            : "w-0 group-hover:w-full"
                                             }`}
                                     />
                                 </Link>
@@ -100,8 +103,8 @@ export default function Header() {
                                             key={h.href}
                                             href={h.href}
                                             className={`block px-4 py-2 text-sm ${pathname === h.href
-                                                    ? "bg-gold-400/20 text-gold-300"
-                                                    : "text-white/70 hover:bg-gold-400/10"
+                                                ? "bg-gold-400/20 text-gold-300"
+                                                : "text-white/70 hover:bg-gold-400/10"
                                                 }`}
                                         >
                                             {h.name}
@@ -138,8 +141,8 @@ export default function Header() {
                             href={href}
                             onClick={close}
                             className={`block px-4 py-3 rounded-lg ${pathname === href
-                                    ? "bg-gold-400/20 text-gold-300"
-                                    : "text-white/80"
+                                ? "bg-gold-400/20 text-gold-300"
+                                : "text-white/80"
                                 }`}
                         >
                             {label}
