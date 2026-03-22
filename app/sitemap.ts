@@ -4,5 +4,33 @@ export default function sitemap() {
             url: "https://kgbhotels.com",
             lastModified: new Date(),
         },
+        {
+            url: "https://kgbhotels.com/about",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/contact",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/gallery",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/offers",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/hotel/cool-river",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/hotel/all-rounder",
+            lastModified: new Date(),
+        },
+        {
+            url: "https://kgbhotels.com/hotel/beach-view",
+            lastModified: new Date(),
+        },
     ];
 }
