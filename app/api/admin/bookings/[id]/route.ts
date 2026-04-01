@@ -6,10 +6,10 @@ import { cookies } from 'next/headers';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'super_secret';
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+export async function PATCH(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const data = await req.json();
-    const id = params.id;
+    const { id } = await params;
 
     const cookieStore = await cookies();
     const token = cookieStore.get('auth-token')?.value;
