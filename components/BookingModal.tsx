@@ -6,7 +6,7 @@ import {
     X, Calendar, Users, Home, Loader2, AlertCircle, 
     TrendingUp, ShieldCheck, Zap, User, Mail, Phone, 
     CalendarDays, CreditCard, ChevronRight, ChevronLeft,
-    CheckCircle2, Smartphone, Globe, Star
+    CheckCircle2, Smartphone, Globe, Star, Check
 } from "lucide-react"
 import { DayPicker, DateRange } from "react-day-picker"
 import { format, differenceInDays, isBefore, startOfToday, addDays } from "date-fns"
