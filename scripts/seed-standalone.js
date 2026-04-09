@@ -56,7 +56,7 @@ const hotels = [
     basePrice: 1899,
     offer: "Family Package: Buy 2 Nights Get 10% OFF",
     isAvailable: true,
-    imageUrl: "/gallery/villa-homes/logo.jpeg"
+    imageUrl: "/gallery/villa homes/logo.jpeg"
   }
 ];
 

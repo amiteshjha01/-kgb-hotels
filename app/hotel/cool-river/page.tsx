@@ -139,6 +139,7 @@ export default function CoolRiverHotelPage() {
                 mapsLink="https://maps.app.goo.gl/iNkFuPg1n8fTkXKy7"
 
                 backHref="/"
+                hotelId="KGB Coolriver"
             />
         </>
     )

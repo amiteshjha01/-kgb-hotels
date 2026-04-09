@@ -136,6 +136,7 @@ export default function VillaHomesPage() {
                 mapsLink="https://maps.app.goo.gl/jt8CG54gUyHdtVpT9"
 
                 backHref="/"
+                hotelId="KGB Villa Homes"
             />
         </>
     )

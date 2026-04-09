@@ -2,12 +2,15 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { usePathname } from "next/navigation"
+import { ChevronDown } from "lucide-react"
 
 export default function Header() {
     const [open, setOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    const [hotelsOpen, setHotelsOpen] = useState(false)
+    const dropdownRef = useRef<HTMLDivElement>(null)
     const pathname = usePathname()
 
     useEffect(() => {
@@ -18,11 +21,24 @@ export default function Header() {
 
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : ""
-
-        return () => {
-            document.body.style.overflow = ""
-        }
+        return () => { document.body.style.overflow = "" }
     }, [open])
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setHotelsOpen(false)
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside)
+        return () => document.removeEventListener("mousedown", handleClickOutside)
+    }, [])
+
+    // Close dropdowns on route change
+    useEffect(() => {
+        setOpen(false)
+        setHotelsOpen(false)
+    }, [pathname])
 
     const close = () => setOpen(false)
 
@@ -92,22 +108,31 @@ export default function Header() {
                             ))}
 
                             {/* HOTELS DROPDOWN */}
-                            <div className="relative group">
-                                <button className="text-white/70 hover:text-gold-300 text-sm">
+                            <div className="relative" ref={dropdownRef}>
+                                <button 
+                                    onClick={() => setHotelsOpen(!hotelsOpen)}
+                                    onMouseEnter={() => setHotelsOpen(true)}
+                                    className={`flex items-center gap-1.5 text-sm transition-colors ${hotelsOpen || pathname.startsWith('/hotel') ? "text-gold-300" : "text-white/70 hover:text-gold-300"}`}
+                                >
                                     Our Hotels
+                                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${hotelsOpen ? "rotate-180" : ""}`} />
                                 </button>
 
-                                <div className="absolute top-full left-0 mt-3 w-56 bg-navy-900 border border-gold-400/20 rounded-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition">
+                                <div 
+                                    className={`absolute top-full left-0 mt-3 w-64 bg-navy-950/95 backdrop-blur-xl border border-gold-400/20 rounded-2xl shadow-2xl p-2 transition-all duration-300 origin-top ${hotelsOpen ? "opacity-100 visible translate-y-0 scale-100" : "opacity-0 invisible -translate-y-2 scale-95"}`}
+                                    onMouseLeave={() => setHotelsOpen(false)}
+                                >
                                     {hotels.map((h) => (
                                         <Link
                                             key={h.href}
                                             href={h.href}
-                                            className={`block px-4 py-2 text-sm ${pathname === h.href
-                                                ? "bg-gold-400/20 text-gold-300"
-                                                : "text-white/70 hover:bg-gold-400/10"
+                                            className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm transition-all duration-200 ${pathname === h.href
+                                                ? "bg-gold-400/15 text-gold-300"
+                                                : "text-white/70 hover:bg-white/5 hover:text-white"
                                                 }`}
                                         >
-                                            {h.name}
+                                            <span>{h.name}</span>
+                                            {pathname === h.href && <span className="w-1.5 h-1.5 rounded-full bg-gold-400" />}
                                         </Link>
                                     ))}
                                 </div>
@@ -158,7 +183,10 @@ export default function Header() {
                                 key={h.href}
                                 href={h.href}
                                 onClick={close}
-                                className="block px-4 py-2 text-white/70"
+                                className={`block px-4 py-2.5 rounded-lg text-sm transition-colors ${pathname === h.href
+                                    ? "bg-gold-400/10 text-gold-300"
+                                    : "text-white/70 hover:text-white"
+                                    }`}
                             >
                                 {h.name}
                             </Link>

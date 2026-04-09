@@ -136,6 +136,7 @@ export default function LegendGrandPage() {
                 mapsLink="https://maps.app.goo.gl/BLPF3ahn7erbB4LM9"
 
                 backHref="/"
+                hotelId="KGB Legend Grand"
             />
         </>
     )
